@@ -1,0 +1,70 @@
+<html><head><title>Laura Harris | Academic Portfolio | Final Construction Document Set</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="scripts/header.js"></script>
+<script type="text/javascript" src="scripts/script.js" defer></script>
+
+</head>
+
+<body onload="renderThumbnails('academic4', 6)" onkeydown="checkKey(arguments[0] || window.event)">
+
+    <header>
+        <div id="navbar"></div>
+    </header>
+        
+    <main>
+
+        <div id="container">
+
+            <h2>Final Construction Document Set</h2>     
+            
+            <div class="gallery-container">
+                <div class="gallery-image-panel">
+                    <div id="gallery" class="thumbnail-container"></div>
+                </div>
+                <div class="gallery-description-panel">
+                    <p>Students were assigned a small-scale set of construction drawings for their final project. The set included a partition plan, furniture plan, reflected ceiling plan, power and communications plan, finish plan, interior elevations, and interior sections.</p>
+
+                    <p>The goal of this project was to incorporate all the AutoCAD techniques learned throughout the class and apply them to a realistic interior design application. Since this class is a pre-requisite to the upper-level studio classes, design principles were not evaluated in these construction documents. However, students were assessed on their ability to incorporate their AutoCAD skills and interior design standards into a construction document set using AutoCAD.</p>
+                    
+                    <p>Grading criteria included layers and standards, blocks, text heights, dimensions, hatches, symbols, legend creation, proper markers, organization, titleblocks, and presentation.</p>
+                    
+                    <p>An example student final project is included on the next 6 pages. The final project was worth 250 points.</p>
+                    
+                    <p>The final grades of the class were as follows:
+                        <ul>
+                            <li>Student A: 92%</li>
+                            <li>Student B: 97%</li>
+                            <li>Student C: 97%</li>
+                            <li>Student D: 94%</li>
+                            <li>Student E: 92%</li>
+                            <li>Student F: 89%</li>
+                            <li>Student G: 67%</li>
+                        </ul>
+                    </p>
+                    
+                    <p><a href="portfolio.html">&lt; Back to Portfolio</a></p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="carousel" id="carousel">
+            <a href="javascript:void(0)" class="close-btn" onclick="hideCarousel()">&times;</a>
+            <div class="carousel-margin"></div>
+            <div class="carousel-main">                
+                <a class="carousel-control-link" href="javascript:void(0)" onclick="carouselPrev()">
+                    <span class="carousel-control prev-control">&lt;</span>
+                </a>
+                <span id="carouselImg" class="carousel-image"></span>
+                <a class="carousel-control-link" href="javascript:void(0)" onclick="carouselNext()">
+                    <span class="carousel-control next-control">&gt;</span>
+                </a>           
+            </div>
+            <div class="carousel-margin"></div>
+        </div>
+
+    </main>
+
+</body></html>

@@ -1,0 +1,58 @@
+<html><head><title>Laura Harris | Professional Portfolio | Ecotech Institute</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="scripts/header.js"></script>
+<script type="text/javascript" src="scripts/script.js" defer></script>
+
+</head>
+
+<body onload="renderThumbnails('ecotech', 11)" onkeydown="checkKey(arguments[0] || window.event)">
+
+    <header>
+        <div id="navbar"></div>
+    </header>
+        
+    <main>
+
+        <div id="container">
+
+            <h2>ECOTECH INSTITUTE</h2>
+            <div class="center">Interior Designer</div>
+            
+            <div class="gallery-container">
+                
+                <div class="gallery-image-panel">
+                        <div id="gallery" class="thumbnail-container"></div>
+                </div>
+
+                <div class="gallery-description-panel">
+                    <p>Launched in 2011, Ecotech Institute, owned by Education Corporation of America, is a private technical college focused on preparing graduates for careers in the fields of renewable energy, sustainability, and energy efficiency. The former indoor amusement park was converted into a $5.8 million LEED Gold certified learning facility. The 62,125 square feet of finished interior space houses a combination of traditional classrooms, office areas, and technical labs where students receive experience in green-collar fields. The building generates over 65,000 Kilowatt hours of electricity annually from onsite clean renewable energy sources.</p> 
+
+                    <p>Because Ecotech Institute is centered on sustainability, the design concept was to inspire students and promote renewable energy sources through the use of sustainable materials and organic forms, as well as images and colors reflective of natural elements. The curved wall that spans the front of the building highlights this concept and is reminiscent of the curve of wind turbine blades. Images of nature were printed on stretched canvas as well as wallcoverings and were designed to fit in prominent locations. The various elements of the facility unite the technical aspect of sustainable energy education with the natural environment that inspires and sustains this industry.</p>
+                    
+                    <p><a href="portfolio.html">&lt; Back to Portfolio</a></p>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="carousel" id="carousel">
+            <a href="javascript:void(0)" class="close-btn" onclick="hideCarousel()">&times;</a>
+            <div class="carousel-margin"></div>
+            <div class="carousel-main">                
+                <a class="carousel-control-link" href="javascript:void(0)" onclick="carouselPrev()">
+                    <span class="carousel-control prev-control">&lt;</span>
+                </a>
+                <span id="carouselImg" class="carousel-image"></span>
+                <a class="carousel-control-link" href="javascript:void(0)" onclick="carouselNext()">
+                    <span class="carousel-control next-control">&gt;</span>
+                </a>           
+            </div>
+            <div class="carousel-margin"></div>
+        </div>
+
+    </main>
+
+</body></html>

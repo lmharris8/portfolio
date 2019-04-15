@@ -1,0 +1,54 @@
+<html><head><title>Laura Harris | Professional Portfolio | Cottages of Fort Collins</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="scripts/header.js"></script>
+<script type="text/javascript" src="scripts/script.js" defer></script>
+
+</head>
+
+<body onload="renderThumbnails('fortcollins', 7)" onkeydown="checkKey(arguments[0] || window.event)">
+
+    <header>
+        <div id="navbar"></div>        
+    </header>
+        
+    <main>
+
+        <div id="container">
+
+            <h2>COTTAGES OF FORT COLLINS</h2>
+            <div class="center">Design and Project Manager</div>         
+            
+            <div class="gallery-container">
+                <div class="gallery-image-panel">
+                    <div id="gallery" class="thumbnail-container"></div>
+                </div>
+                <div class="gallery-description-panel">
+                    <p>Capstone Collegiate Communities contracted with Capstone Interiors in 2017 and 2018 to provide student unit furniture, outdoor pool furniture, and a unit model
+for a new construction off-campus housing project in Fort Collins, Colorado. The project included $1 million and 500 beds of furnished student units, $100k in out-
+door furniture, and a 4-bedroom townhouse leasing model that was furnished and accessorized to appeal to student tenants and increase marketing efforts.</p>
+                    <p><a href="portfolio.html">&lt; Back to Portfolio</a></p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="carousel" id="carousel">
+            <a href="javascript:void(0)" class="close-btn" onclick="hideCarousel()">&times;</a>
+            <div class="carousel-margin"></div>
+            <div class="carousel-main">                
+                <a class="carousel-control-link" href="javascript:void(0)" onclick="carouselPrev()">
+                    <span class="carousel-control prev-control">&lt;</span>
+                </a>
+                <span id="carouselImg" class="carousel-image"></span>
+                <a class="carousel-control-link" href="javascript:void(0)" onclick="carouselNext()">
+                    <span class="carousel-control next-control">&gt;</span>
+                </a>           
+            </div>
+            <div class="carousel-margin"></div>
+        </div>
+
+    </main>
+
+</body></html>

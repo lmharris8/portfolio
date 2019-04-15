@@ -1,0 +1,55 @@
+<html><head><title>Laura Harris | Professional Portfolio | University of South Florida: The Village</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="scripts/header.js"></script>
+<script type="text/javascript" src="scripts/script.js" defer></script>
+
+</head>
+
+<body onload="renderThumbnails('usf', 16)" onkeydown="checkKey(arguments[0] || window.event)">
+
+    <header>
+        <div id="navbar"></div>
+    </header>
+        
+    <main>
+
+        <div id="container">
+
+            <h2>UNIVERSITY OF SOUTH FLORIDA</h2>
+            <div class="center">Design and Project Manager</div>
+            
+            <div class="gallery-container">
+                <div class="gallery-image-panel">
+                    <div id="gallery" class="thumbnail-container"></div>
+                </div>
+                <div class="gallery-description-panel">
+                    <p>Capstone Development Partners (CDP) was awarded the development, design, finance and construction of a new $134 million on-campus residential mixed-use village at the University of South Florida. The new village encompasses 2,171 beds in five new concrete residence halls with a total of 578,088 square feet, which delivered in August 2017 and August 2018. The project provides a combination of semi-suite and traditional style units, a health and wellness facility, outdoor pool, dining facility, and retail spaces. The Village construction meets the standards for LEED Silver certification.</p>
+
+                    <p>CDP contracted with Capstone Interiors to provide the FF&E for the new village. The $5.5 million furniture package included custom designed student unit furniture, amenity area furniture, administrative offices, furniture for the wellness center, and outdoor/site furniture. Capstone Interiors coordinated efforts with the developer, university, and construction teams to ensure a seamless design intent and delivery between the built environment and the FF&E package. Capstone Interiors created the initial budget, designed a furniture package that was approved by the developer and university, oversaw the bidding process, specified the furniture and issued purchase orders, tracked the budget and furniture delivery, and coordinated the installation with all necessary parties. Capstone Interiors also oversaw the installation of the student units and amenity spaces over a month-long installation process both in 2017 and 2018.</p>
+                    
+                    <p><a href="portfolio.html">&lt; Back to Portfolio</a></p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="carousel" id="carousel">
+            <a href="javascript:void(0)" class="close-btn" onclick="hideCarousel()">&times;</a>
+            <div class="carousel-margin"></div>
+            <div class="carousel-main">                
+                <a class="carousel-control-link" href="javascript:void(0)" onclick="carouselPrev()">
+                    <span class="carousel-control prev-control">&lt;</span>
+                </a>
+                <span id="carouselImg" class="carousel-image"></span>
+                <a class="carousel-control-link" href="javascript:void(0)" onclick="carouselNext()">
+                    <span class="carousel-control next-control">&gt;</span>
+                </a>           
+            </div>
+            <div class="carousel-margin"></div>
+        </div>
+
+    </main>
+
+</body></html>
