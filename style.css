@@ -460,7 +460,6 @@ H3 {
     }
 
     .img-large {
-        max-width: 100%; 
-        height: auto;
+        width: 100%;
     }
 }

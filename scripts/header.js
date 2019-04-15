@@ -1,15 +1,15 @@
 function toggleNavbar() {
     const navlinks = document.getElementById('navlinks');
-    const mains = document.getElementsByTagName("main");
+    const main = document.getElementsByTagName("main")[0];
     const menubutton = document.getElementById('menubutton');
   
     if (navlinks.style.display == '') {
       navlinks.style.display = 'block';
-      mains[0].style.display = 'none';
+      main.style.display = 'none';
       menubutton.style.color = '#c40808';
     } else {
       navlinks.style.display = '';
-      mains[0].style.display = 'block';       
+      main.style.display = 'block';       
       menubutton.style.color = '#fff';
     }
   }
@@ -36,24 +36,34 @@ function getHeaderCode(page) {
   code += '<span id="navlinks">'
   code += '  <ul>';
   code += '     <li><a href="index.html" class="navLink'
+
   if (page == 'home')
     code += ' active-link';
+
   code += '">HOME</a></li>';
   code += '     <li><a href="portfolio.html" class="navLink'
+
   if (page == 'portfolio')
     code += ' active-link';
+
   code += '">PORTFOLIO</a></li>';
   code += '     <li><a href="cv.html" class="navLink'
+
   if (page == 'cv')
     code += ' active-link';
+
   code += '">CURRICULUM VITAE</a></li>';
   code += '     <li><a href="thesis.html" class="navLink'
+
   if (page == 'thesis')
     code += ' active-link';
+
   code += '">THESIS</a></li>';
   code += '     <li><a href="contact.html" class="navLink'
+
   if (page == 'contact')
     code += ' active-link';
+
   code += '">CONTACT</a></li>';
   code += '  </ul>';
   code += '</span>'
