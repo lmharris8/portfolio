@@ -27,23 +27,42 @@ function hideMenu(e) {
     document.getElementById(e).style.display = 'none';
 }  
 
-var code = '';
-code += '<span id="menubutton" onclick="toggleNavbar()">&#9776;</span>';
-code += '<span class="square"></span>';
-code += '<span id="title">LAURA HARRIS</span>';
-code += '<span class="spacer"></span>';
-code += '<span id="navlinks">'
-code += '  <ul>';
-code += '     <li><a href="index.html" class="navLink">HOME</a></li>';
-code += '     <li><a href="portfolio.html" class="navLink">PORTFOLIO</a></li>';
-code += '     <li><a href="cv.html" class="navLink">CURRICULUM VITAE</a></li>';
-code += '     <li><a href="thesis.html" class="navLink">THESIS</a></li>';
-code += '     <li><a href="contact.html" class="navLink">CONTACT</a></li>';
-code += '  </ul>';
-code += '</span>'
+function getHeaderCode(page) {
+  var code = '';
+  code += '<span id="menubutton" onclick="toggleNavbar()">&#9776;</span>';
+  code += '<span class="square"></span>';
+  code += '<span id="title">LAURA HARRIS</span>';
+  code += '<span class="spacer"></span>';
+  code += '<span id="navlinks">'
+  code += '  <ul>';
+  code += '     <li><a href="index.html" class="navLink'
+  if (page == 'home')
+    code += ' active-link';
+  code += '">HOME</a></li>';
+  code += '     <li><a href="portfolio.html" class="navLink'
+  if (page == 'portfolio')
+    code += ' active-link';
+  code += '">PORTFOLIO</a></li>';
+  code += '     <li><a href="cv.html" class="navLink'
+  if (page == 'cv')
+    code += ' active-link';
+  code += '">CURRICULUM VITAE</a></li>';
+  code += '     <li><a href="thesis.html" class="navLink'
+  if (page == 'thesis')
+    code += ' active-link';
+  code += '">THESIS</a></li>';
+  code += '     <li><a href="contact.html" class="navLink'
+  if (page == 'contact')
+    code += ' active-link';
+  code += '">CONTACT</a></li>';
+  code += '  </ul>';
+  code += '</span>'
+  return code;
+}
 
 function loadNav(){
-    document.getElementById('navbar').innerHTML = code;
+    currentPage = document.getElementById('currentPage').innerHTML;
+    document.getElementById('navbar').innerHTML = getHeaderCode(currentPage);
 }
 
 window.addEventListener("load", loadNav, false);

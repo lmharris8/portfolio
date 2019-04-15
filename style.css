@@ -27,10 +27,6 @@ H3 {
     padding: 30px 0 15px 0;
 }
 
-.active-link {
-    color: #c40808
-}
-
 .center {
     text-align: center;
 }
@@ -41,6 +37,10 @@ H3 {
 
 .left {
     text-align: left;
+}
+
+.hidden {
+    display: none;
 }
 
 .spacer {
@@ -163,6 +163,10 @@ H3 {
 	}
 
 	.navLink:hover {
+        color: #c40808;
+    }
+
+    .active-link {
         color: #c40808;
     }
     
