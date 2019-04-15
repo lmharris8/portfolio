@@ -311,6 +311,19 @@ H3 {
         list-style-type: none;
     }
 
+    .width-40-large-only {
+        width: 40%;
+    }
+
+    .width-60-large-only {
+        width: 60%;
+    }
+
+    .img-large {
+        max-width: 900px; 
+        height: auto;
+    }
+
 }
 
 /* Small Screens */
@@ -444,5 +457,10 @@ H3 {
         margin: 0;
         list-style-type: none;
         padding-left: 16px;
+    }
+
+    .img-large {
+        max-width: 100%; 
+        height: auto;
     }
 }
