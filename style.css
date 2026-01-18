@@ -520,14 +520,24 @@ header {
 .glightbox-clean .gclose,
 .glightbox-clean .gnext,
 .glightbox-clean .gprev {
-    background: rgba(255,255,255,0.9) !important;
+    background: var(--color-primary) !important;
     border-radius: 50%;
+    opacity: 0.9;
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.glightbox-clean .gclose svg,
+.glightbox-clean .gnext svg,
+.glightbox-clean .gprev svg {
+    fill: var(--color-white) !important;
 }
 
 .glightbox-clean .gclose:hover,
 .glightbox-clean .gnext:hover,
 .glightbox-clean .gprev:hover {
-    background: var(--color-white) !important;
+    background: var(--color-primary-dark) !important;
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* CV Styles */
@@ -670,6 +680,7 @@ header {
     letter-spacing: 0.1em;
     color: var(--color-text-light);
     margin-bottom: 2px;
+    display: flex;
 }
 
 .contact-value {
@@ -893,11 +904,14 @@ footer {
     
     #navbar {
         flex-wrap: wrap;
-        padding: var(--spacing-sm);
+        padding: var(--spacing-xs) var(--spacing-sm);
     }
     
     #title {
-        display: none;
+        display: block;
+        color: var(--color-white);
+        font-size: 1.5rem;
+        margin-left: 0;
     }
     
     .square {
@@ -907,6 +921,7 @@ footer {
     #menubutton {
         display: block;
         background: transparent;
+        order: 1;
     }
     
     #menubutton:hover {
@@ -916,12 +931,12 @@ footer {
     #navlinks {
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         bottom: 0;
         width: 280px;
         background: var(--color-white);
         box-shadow: var(--shadow-lg);
-        transform: translateX(-100%);
+        transform: translateX(100%);
         transition: transform var(--transition-slow);
         z-index: 200;
         padding-top: var(--spacing-xl);
@@ -986,7 +1001,9 @@ footer {
     /* Project Split Layout - Mobile */
     .project-split {
         flex-direction: column;
+        height: auto;
         min-height: auto;
+        overflow: visible;
     }
     
     .project-info-panel {
