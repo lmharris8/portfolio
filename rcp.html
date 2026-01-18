@@ -1,59 +1,76 @@
-<html><head><title>Laura Harris | Academic Portfolio | Week 6 RCP</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Week 6 RCP - Academic portfolio piece demonstrating AutoCAD layer management instruction.">
+    <title>Laura Harris | Week 6 RCP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="style.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css" type="text/css">
-<script type="text/javascript" src="scripts/header.js"></script>
-<script type="text/javascript" src="scripts/script.js" defer></script>
+    <!-- Favicon Files -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Laura Harris" />
 
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
-<body onload="renderThumbnails('academic1', 1)" onkeydown="checkKey(arguments[0] || window.event)">
+<body data-gallery="academic1" data-gallery-count="1">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
-        <div id="navbar"></div>
+        <nav id="navbar" aria-label="Main navigation">
+            <button type="button" id="menubutton" onclick="toggleNavbar()" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">&#9776;</button>
+            <span class="square" aria-hidden="true"></span>
+            <span id="title">LAURA HARRIS</span>
+            <span class="spacer"></span>
+            <div id="navlinks">
+                <ul>
+                    <li><a href="index.html" class="navLink">HOME</a></li>
+                    <li><a href="portfolio.html" class="navLink active-link" aria-current="page">PORTFOLIO</a></li>
+                    <li><a href="cv.html" class="navLink">CURRICULUM VITAE</a></li>
+                    <li><a href="thesis.html" class="navLink">THESIS</a></li>
+                    <li><a href="contact.html" class="navLink">CONTACT</a></li>
+                </ul>
+            </div>
+            <div id="nav-backdrop" aria-hidden="true"></div>
+        </nav>
     </header>
-        
-    <main>
 
-        <div id="container">
-
-            <h2>Week 6 RCP</h2>     
-            
-            <div class="gallery-container">
-                <div class="gallery-image-panel width-40-large-only">
-                    <div id="gallery" class="thumbnail-container"></div>
-                </div>
-                <div class="gallery-description-panel width-60-large-only">
+    <main id="main-content">
+        <div class="project-split">
+            <aside class="project-info-panel">
+                <h1 class="project-title">Week 6 RCP</h1>
+                <div class="project-description">
                     <p>The goal of this project was two-fold: 1) to introduce students to layers and layer management, and 2) to introduce students to designing reflected ceiling plans.</p>
 
                     <p>Students were required to appropriately assign all building elements to layers established by the interior design department. Naming conventions, lineweights, colors, and line types were all assessed.</p>
-                            
+
                     <p>To demonstrate their knowledge of layers and layer management, students were required to create a reflected ceiling plan. Because the students had not yet completed their studio courses, the design of the RCP was not graded. However, they were required to incorporate certain elements such as 2 types of light fixtures, both ceiling grid and gyp board ceilings, HVAC and light fixtures, and switching. A lighting legend was also included with the assignment.</p>
-                            
+
                     <p>This project was worth 50 points, and an example of a student submission is shown to the right.</p>
-                    
-                    <p><a href="portfolio.html">&lt; Back to Portfolio</a></p>
                 </div>
+                <p class="back-link">
+                    <a href="portfolio.html">
+                        <i data-lucide="arrow-left" class="icon"></i>
+                        Back to Portfolio
+                    </a>
+                </p>
+            </aside>
+            <div class="project-gallery-panel">
+                <div id="gallery" class="masonry-gallery" role="list" aria-label="Assignment examples"></div>
             </div>
-            
         </div>
-
-        <div class="carousel" id="carousel">
-            <a href="javascript:void(0)" class="close-btn" onclick="hideCarousel()">&times;</a>
-            <div class="carousel-margin"></div>
-            <div class="carousel-main">                
-                <a class="carousel-control-link" href="javascript:void(0)" onclick="carouselPrev()">
-                    <span class="carousel-control prev-control">&lt;</span>
-                </a>
-                <span id="carouselImg" class="carousel-image"></span>
-                <a class="carousel-control-link" href="javascript:void(0)" onclick="carouselNext()">
-                    <span class="carousel-control next-control">&gt;</span>
-                </a>           
-            </div>
-            <div class="carousel-margin"></div>
-        </div>
-
     </main>
-    <div class="hidden" id="currentPage">portfolio</div>
 
-</body></html>
+
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

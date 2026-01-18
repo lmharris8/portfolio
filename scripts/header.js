@@ -1,78 +1,102 @@
+/**
+ * Navigation handling for the portfolio site
+ */
+
+const NAV_ITEMS = [
+    { href: 'index.html', label: 'Home', page: 'home' },
+    { href: 'portfolio.html', label: 'Portfolio', page: 'portfolio' },
+    { href: 'cv.html', label: 'Curriculum Vitae', page: 'cv' },
+    { href: 'thesis.html', label: 'Thesis', page: 'thesis' },
+    { href: 'contact.html', label: 'Contact', page: 'contact' }
+];
+
 function toggleNavbar() {
     const navlinks = document.getElementById('navlinks');
-    const main = document.getElementsByTagName("main")[0];
     const menubutton = document.getElementById('menubutton');
-  
-    if (navlinks.style.display == '') {
-      navlinks.style.display = 'block';
-      main.style.display = 'none';
-      menubutton.style.color = '#c40808';
-    } else {
-      navlinks.style.display = '';
-      main.style.display = 'block';       
-      menubutton.style.color = '#fff';
-    }
-  }
-  
-function hideSubs() {
-    document.getElementById('portfolios').style.display = 'none';
-}
+    const backdrop = document.getElementById('nav-backdrop');
     
-function showMenu(e) {
-    hideSubs();
-    document.getElementById(e).style.display = 'block';
-}
-  
-function hideMenu(e) {
-    document.getElementById(e).style.display = 'none';
-}  
-
-function getHeaderCode(page) {
-  var code = '';
-  code += '<span id="menubutton" onclick="toggleNavbar()">&#9776;</span>';
-  code += '<span class="square"></span>';
-  code += '<span id="title">LAURA HARRIS</span>';
-  code += '<span class="spacer"></span>';
-  code += '<span id="navlinks">'
-  code += '  <ul>';
-  code += '     <li><a href="index.html" class="navLink'
-
-  if (page == 'home')
-    code += ' active-link';
-
-  code += '">HOME</a></li>';
-  code += '     <li><a href="portfolio.html" class="navLink'
-
-  if (page == 'portfolio')
-    code += ' active-link';
-
-  code += '">PORTFOLIO</a></li>';
-  code += '     <li><a href="cv.html" class="navLink'
-
-  if (page == 'cv')
-    code += ' active-link';
-
-  code += '">CURRICULUM VITAE</a></li>';
-  code += '     <li><a href="thesis.html" class="navLink'
-
-  if (page == 'thesis')
-    code += ' active-link';
-
-  code += '">THESIS</a></li>';
-  code += '     <li><a href="contact.html" class="navLink'
-
-  if (page == 'contact')
-    code += ' active-link';
-
-  code += '">CONTACT</a></li>';
-  code += '  </ul>';
-  code += '</span>'
-  return code;
+    if (!navlinks || !menubutton) return;
+    
+    const isExpanded = navlinks.classList.contains('active');
+    
+    navlinks.classList.toggle('active');
+    backdrop?.classList.toggle('active');
+    menubutton.setAttribute('aria-expanded', !isExpanded);
 }
 
-function loadNav(){
-    currentPage = document.getElementById('currentPage').innerHTML;
-    document.getElementById('navbar').innerHTML = getHeaderCode(currentPage);
+function closeNavbar() {
+    const navlinks = document.getElementById('navlinks');
+    const menubutton = document.getElementById('menubutton');
+    const backdrop = document.getElementById('nav-backdrop');
+    
+    if (!navlinks || !menubutton) return;
+    
+    navlinks.classList.remove('active');
+    backdrop?.classList.remove('active');
+    menubutton.setAttribute('aria-expanded', 'false');
 }
 
-window.addEventListener("load", loadNav, false);
+function getHeaderCode(currentPage) {
+    const navItems = NAV_ITEMS.map(item => {
+        const isActive = item.page === currentPage;
+        const activeClass = isActive ? ' active-link' : '';
+        const ariaCurrent = isActive ? ' aria-current="page"' : '';
+        return `<li><a href="${item.href}" class="navLink${activeClass}"${ariaCurrent}>${item.label.toUpperCase()}</a></li>`;
+    }).join('\n');
+    
+    return `
+        <button type="button" id="menubutton" onclick="toggleNavbar()" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">&#9776;</button>
+        <span class="square" aria-hidden="true"></span>
+        <span id="title">LAURA HARRIS</span>
+        <span class="spacer"></span>
+        <div id="navlinks">
+            <ul>
+                ${navItems}
+            </ul>
+        </div>
+        <div id="nav-backdrop" aria-hidden="true"></div>
+    `;
+}
+
+function loadNav() {
+    const currentPageEl = document.getElementById('currentPage');
+    const navbar = document.getElementById('navbar');
+    
+    if (!navbar) return;
+    
+    // Only generate HTML if navbar is empty (allows static HTML in pages)
+    if (!navbar.querySelector('#navlinks')) {
+        const currentPage = currentPageEl ? currentPageEl.textContent.trim() : 'home';
+        navbar.innerHTML = getHeaderCode(currentPage);
+    }
+    
+    // Close menu when clicking a nav link
+    const navlinks = document.getElementById('navlinks');
+    if (navlinks) {
+        navlinks.addEventListener('click', (e) => {
+            if (e.target.classList.contains('navLink')) {
+                closeNavbar();
+            }
+        });
+    }
+    
+    // Close menu when clicking backdrop
+    const backdrop = document.getElementById('nav-backdrop');
+    if (backdrop) {
+        backdrop.addEventListener('click', closeNavbar);
+    }
+    
+    // Close menu on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeNavbar();
+        }
+    });
+}
+
+// Initialize navigation when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadNav);
+} else {
+    loadNav();
+}

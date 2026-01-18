@@ -1,39 +1,66 @@
-<html><head><title>Laura Harris | Thesis</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thesis research on designing educational facilities for social engagement in adolescents by Laura Harris.">
+    <title>Laura Harris | Thesis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css" type="text/css">
-<script type="text/javascript" src="scripts/header.js"></script>
-<script type="text/javascript" src="scripts/script.js"></script>
+    <!-- Favicon Files -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Laura Harris" />
 
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
-        <div id="navbar"></div>
-    </header>
-        
-    <main>
-
-        <div id="container">
-            
-            
-            <h2>ABSTRACT</h2>
-            
-            <p>Research indicates that social development is important for the health of adolescents, suggesting a need for additional interior design methods in educational facility planning that encourage student social engagement. The purpose of this study is to determine the degree to which middle school educators perceive the built environment of secondary educational facilities as influencing the social development of adolescents. A qualitative research study utilizing a case study methodology was established to delve into educator perceptions regarding the correlation between student social engagement and educational facility design. There were nine educators from seven educational facilities in the research sample. All educators taught seventh through ninth grade near Birmingham, Alabama. Data was collected through a combination of interviews and site visits. The research was analyzed using a general inductive approach, and three significant findings emerged. First, all the participants indicated that the built environment of an educational facility is important to student social development. Second, the participants identified five elements and principles of design that influence student social development: space and ceiling heights, lighting and windows, color and visual complexity, furniture, and acoustics. Third, the participants identified six areas of an educational facility that impact social development: classrooms, outdoor spaces, hallways and locker areas, libraries and theaters, gymnasiums, and auxiliary meeting spaces. It is intended that these findings will lead to more effective educational design practices that benefit adolescent students and the interior design community.</p>
-
-            <h2>THESIS</h2>
-            <div class="center">
-            
-            <p>Please <a href="contact.html">contact me</a> for a copy of the full thesis.</p>
-
+        <nav id="navbar" aria-label="Main navigation">
+            <button type="button" id="menubutton" onclick="toggleNavbar()" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">&#9776;</button>
+            <span class="square" aria-hidden="true"></span>
+            <span id="title">LAURA HARRIS</span>
+            <span class="spacer"></span>
+            <div id="navlinks">
+                <ul>
+                    <li><a href="index.html" class="navLink">HOME</a></li>
+                    <li><a href="portfolio.html" class="navLink">PORTFOLIO</a></li>
+                    <li><a href="cv.html" class="navLink">CURRICULUM VITAE</a></li>
+                    <li><a href="thesis.html" class="navLink active-link" aria-current="page">THESIS</a></li>
+                    <li><a href="contact.html" class="navLink">CONTACT</a></li>
+                </ul>
             </div>
-            
-        </div>
-        
-    </div>
-    
-</main>
-<div class="hidden" id="currentPage">thesis</div>
+            <div id="nav-backdrop" aria-hidden="true"></div>
+        </nav>
+    </header>
 
-</body></html>
+    <main id="main-content">
+        <div id="container">
+            <h1 class="page-title">Thesis</h1>
+
+            <article class="content-article">
+                <h2>Abstract</h2>
+
+                <p>Research indicates that social development is important for the health of adolescents, suggesting a need for additional interior design methods in educational facility planning that encourage student social engagement. The purpose of this study is to determine the degree to which middle school educators perceive the built environment of secondary educational facilities as influencing the social development of adolescents. A qualitative research study utilizing a case study methodology was established to delve into educator perceptions regarding the correlation between student social engagement and educational facility design. There were nine educators from seven educational facilities in the research sample. All educators taught seventh through ninth grade near Birmingham, Alabama. Data was collected through a combination of interviews and site visits. The research was analyzed using a general inductive approach, and three significant findings emerged. First, all the participants indicated that the built environment of an educational facility is important to student social development. Second, the participants identified five elements and principles of design that influence student social development: space and ceiling heights, lighting and windows, color and visual complexity, furniture, and acoustics. Third, the participants identified six areas of an educational facility that impact social development: classrooms, outdoor spaces, hallways and locker areas, libraries and theaters, gymnasiums, and auxiliary meeting spaces. It is intended that these findings will lead to more effective educational design practices that benefit adolescent students and the interior design community.</p>
+
+                <h2>Full Thesis</h2>
+
+                <p class="center">
+                    Please <a href="contact.html">contact me</a> for a copy of the full thesis.
+                </p>
+            </article>
+        </div>
+    </main>
+
+
+    <script src="scripts/header.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

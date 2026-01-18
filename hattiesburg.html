@@ -1,54 +1,71 @@
-<html><head><title>Laura Harris | Professional Portfolio | Cottages of Hattiesburg</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cottages of Hattiesburg - Student housing renovation project by Laura Harris.">
+    <title>Laura Harris | Cottages of Hattiesburg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="style.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css" type="text/css">
-<script type="text/javascript" src="scripts/header.js"></script>
-<script type="text/javascript" src="scripts/script.js" defer></script>
+    <!-- Favicon Files -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Laura Harris" />
 
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
-<body onload="renderThumbnails('hattiesburg', 1)" onkeydown="checkKey(arguments[0] || window.event)">
+<body data-gallery="hattiesburg" data-gallery-count="1">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
-        <div id="navbar"></div>
+        <nav id="navbar" aria-label="Main navigation">
+            <button type="button" id="menubutton" onclick="toggleNavbar()" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">&#9776;</button>
+            <span class="square" aria-hidden="true"></span>
+            <span id="title">LAURA HARRIS</span>
+            <span class="spacer"></span>
+            <div id="navlinks">
+                <ul>
+                    <li><a href="index.html" class="navLink">HOME</a></li>
+                    <li><a href="portfolio.html" class="navLink active-link" aria-current="page">PORTFOLIO</a></li>
+                    <li><a href="cv.html" class="navLink">CURRICULUM VITAE</a></li>
+                    <li><a href="thesis.html" class="navLink">THESIS</a></li>
+                    <li><a href="contact.html" class="navLink">CONTACT</a></li>
+                </ul>
+            </div>
+            <div id="nav-backdrop" aria-hidden="true"></div>
+        </nav>
     </header>
-        
-    <main>
 
-        <div id="container">
-
-            <h2>COTTAGES OF HATTIESBURG</h2>
-            <div class="center">Designer and Project Manager</div>
-
-            <div class="gallery-container">
-                <div class="gallery-image-panel width-40-large-only">
-                    <div id="gallery" class="thumbnail-container"></div>
-                </div>
-                <div class="gallery-description-panel width-60-large-only">
+    <main id="main-content">
+        <div class="project-split">
+            <aside class="project-info-panel">
+                <h1 class="project-title">Cottages of Hattiesburg</h1>
+                <p class="project-role">Designer and Project Manager</p>
+                <div class="project-description">
                     <p>Capstone Real Estate Investments (CREI) purchased the Cottages of Hattiesburg, which is near the University of Southern Mississippi, from Capstone Collegiate Communities in 2017. Since then, CREI has coordinated with Capstone Interiors to renovate and refresh the existing 400-bed property built in 2008. Although the scope is relatively small, it showcases the diversity of the Capstone Interiors designers.</p>
-
-                    <p><a href="portfolio.html">&lt; Back to Portfolio</a></p>
                 </div>
+                <p class="back-link">
+                    <a href="portfolio.html">
+                        <i data-lucide="arrow-left" class="icon"></i>
+                        Back to Portfolio
+                    </a>
+                </p>
+            </aside>
+            <div class="project-gallery-panel">
+                <div id="gallery" class="masonry-gallery" role="list" aria-label="Project images"></div>
             </div>
-            
         </div>
-
-        <div class="carousel" id="carousel">
-            <a href="javascript:void(0)" class="close-btn" onclick="hideCarousel()">&times;</a>
-            <div class="carousel-margin"></div>
-            <div class="carousel-main">                
-                <a class="carousel-control-link" href="javascript:void(0)" onclick="carouselPrev()">
-                    <span class="carousel-control prev-control">&lt;</span>
-                </a>
-                <span id="carouselImg" class="carousel-image"></span>
-                <a class="carousel-control-link" href="javascript:void(0)" onclick="carouselNext()">
-                    <span class="carousel-control next-control">&gt;</span>
-                </a>           
-            </div>
-            <div class="carousel-margin"></div>
-        </div>
-
     </main>
-    <div class="hidden" id="currentPage">portfolio</div>
 
-</body></html>
+
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
