@@ -104,6 +104,14 @@
     color: var(--color-primary);
 }
 
+/* CV Intro Text */
+.cv-intro {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
 /* CV Timeline */
 .cv-timeline {
     position: relative;
