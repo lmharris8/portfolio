@@ -1,34 +1,76 @@
-<html><head><title>Laura Harris | Contact</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Laura Harris for interior design teaching or consulting opportunities.">
+    <title>Laura Harris | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css" type="text/css">
-<script type="text/javascript" src="scripts/header.js"></script>
-<script type="text/javascript" src="scripts/script.js"></script>
+    <!-- Favicon Files -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Laura Harris" />
 
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header>               
-        <div id="navbar"></div>        
+    <header>
+        <nav id="navbar" aria-label="Main navigation">
+            <button type="button" id="menubutton" onclick="toggleNavbar()" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">&#9776;</button>
+            <span class="square" aria-hidden="true"></span>
+            <span id="title">LAURA HARRIS</span>
+            <span class="spacer"></span>
+            <div id="navlinks">
+                <ul>
+                    <li><a href="index.html" class="navLink">HOME</a></li>
+                    <li><a href="portfolio.html" class="navLink">PORTFOLIO</a></li>
+                    <li><a href="cv.html" class="navLink">CURRICULUM VITAE</a></li>
+                    <li><a href="thesis.html" class="navLink">THESIS</a></li>
+                    <li><a href="contact.html" class="navLink active-link" aria-current="page">CONTACT</a></li>
+                </ul>
+            </div>
+            <div id="nav-backdrop" aria-hidden="true"></div>
+        </nav>
     </header>
-        
-    <main>
 
+    <main id="main-content">
         <div id="container">
+            <h1 class="page-title">Contact</h1>
 
-            <h2>CONTACT</h2>
-            
-            <p>I would love to connect with you regarding the teaching or design needs at your institution.</p>
-            <p>Please feel free to contact me via e-mail or LinkedIn.</p>
-            <blockquote>
-                <p>Email: <a href="mailto:lmharris8@gmail.com">lmharris8@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/laura-harris-b13623182/" target="_blank">Laura Harris</a></p>     
-            </blockquote>
-            
+            <div class="contact-content">
+                <p>I would love to connect with you regarding the teaching or design needs at your institution.</p>
+                <p>Please feel free to contact me via e-mail or LinkedIn.</p>
+
+                <div class="contact-methods">
+                    <a href="mailto:lmharris8@gmail.com" class="contact-link">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">lmharris8@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/laura-harris-b13623182/" target="_blank" rel="noopener" class="contact-link">
+                        <i data-lucide="linkedin" class="contact-icon"></i>
+                        <div>
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">Laura Harris</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-
     </main>
-    <div class="hidden" id="currentPage">contact</div>
 
-</body></html>
+
+    <script src="scripts/header.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
