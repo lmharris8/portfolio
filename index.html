@@ -43,36 +43,141 @@
 
     <main id="main-content">
         <div id="container">
-            <section class="hero center">
+            <!-- Hero Section -->
+            <section class="hero-enhanced">
                 <img src="img/headshot.jpg" alt="Laura Harris, Interior Designer" class="headshot">
-                <p class="credentials"><strong>RID, NCIDQ, LEED AP ID+C, IDEC, IIDA</strong></p>
+                <div class="hero-content">
+                    <h1>Laura Harris</h1>
+                    <p class="tagline">Registered Interior Designer</p>
+                    <p class="tagline-sub">Specializing in Student Housing & Commercial Interiors</p>
+                    <a href="portfolio.html" class="btn-primary">
+                        <i data-lucide="layout-grid" class="icon"></i>
+                        View Portfolio
+                    </a>
+                </div>
             </section>
 
-            <article class="bio">
-                <p>
-                    Laura Harris is a registered interior designer with over nine years of commercial interior design
-                    experience. She graduated with a Bachelor of Fine Arts in Interior Design from Samford University,
-                    which offers an undergraduate interior design program accredited by the Council for Interior Design
-                    Accreditation (CIDA). In 2009, she passed the Leadership in Energy and Environment Design (LEED)
-                    exam. She also passed the National Council for Interior Design Qualification (NCIDQ) examination in
-                    2012 and became a registered interior designer in the state of Alabama. She is a volunteer on the
-                    board of the International Interior Design Association (IIDA) Alabama Chapter, which coordinates
-                    professional events for the interior design community including joint ventures with the American
-                    Society of Interior Designers (ASID) and the Alabama Interior Design Coalition (AIDC). She received
-                    her Master of Fine Arts in Interior Design from Brenau University in May 2019 and was awarded the
-                    Joel Polsky Academic Achievement Award offered by ASID for her thesis findings.
-                </p>
+            <!-- Credentials Bar -->
+            <section class="credentials-bar" aria-label="Professional credentials">
+                <div class="credential-card">
+                    <i data-lucide="badge-check" class="credential-icon"></i>
+                    <span class="credential-abbr">RID</span>
+                    <span class="credential-desc">Registered Interior Designer</span>
+                </div>
+                <div class="credential-card">
+                    <i data-lucide="award" class="credential-icon"></i>
+                    <span class="credential-abbr">NCIDQ</span>
+                    <span class="credential-desc">Nationally Certified</span>
+                </div>
+                <div class="credential-card">
+                    <i data-lucide="leaf" class="credential-icon"></i>
+                    <span class="credential-abbr">LEED AP</span>
+                    <span class="credential-desc">Sustainability Certified</span>
+                </div>
+                <div class="credential-card">
+                    <i data-lucide="briefcase" class="credential-icon"></i>
+                    <span class="credential-abbr">9+ Years</span>
+                    <span class="credential-desc">Professional Experience</span>
+                </div>
+            </section>
 
-                <p>
-                    Laura is currently employed by Capstone Real Estate Investments which provides design and
-                    procurement services for student housing facilities across the country. She works closely with the
-                    company's developer partners as well as university management and owners to create functional
-                    furniture plans, select high quality furnishings, coordinate fabrics and interior finishes,
-                    facilitate purchasing, and manage the installation process. She hopes to expand her career by
-                    utilizing her graduate degree to instruct the next generation of interior designers in addition to
-                    her current responsibilities.
+            <!-- About Section -->
+            <section class="about-section">
+                <h2>About</h2>
+                <article class="bio">
+                    <p>
+                        Laura Harris is a registered interior designer with over nine years of commercial interior design
+                        experience. She graduated with a Bachelor of Fine Arts in Interior Design from Samford University,
+                        which offers an undergraduate interior design program accredited by the Council for Interior Design
+                        Accreditation (CIDA). In 2009, she passed the Leadership in Energy and Environment Design (LEED)
+                        exam. She also passed the National Council for Interior Design Qualification (NCIDQ) examination in
+                        2012 and became a registered interior designer in the state of Alabama. She is a volunteer on the
+                        board of the International Interior Design Association (IIDA) Alabama Chapter, which coordinates
+                        professional events for the interior design community including joint ventures with the American
+                        Society of Interior Designers (ASID) and the Alabama Interior Design Coalition (AIDC).
+                    </p>
+
+                    <div class="highlight-box">
+                        <i data-lucide="trophy" class="highlight-icon"></i>
+                        <div class="highlight-content">
+                            <span class="highlight-label">Award</span>
+                            <p>Received her Master of Fine Arts in Interior Design from Brenau University in May 2019 and was awarded the <strong>Joel Polsky Academic Achievement Award</strong> offered by ASID for her thesis findings.</p>
+                        </div>
+                    </div>
+
+                    <p>
+                        Laura is currently employed by Capstone Real Estate Investments which provides design and
+                        procurement services for student housing facilities across the country. She works closely with the
+                        company's developer partners as well as university management and owners to create functional
+                        furniture plans, select high quality furnishings, coordinate fabrics and interior finishes,
+                        facilitate purchasing, and manage the installation process. She hopes to expand her career by
+                        utilizing her graduate degree to instruct the next generation of interior designers in addition to
+                        her current responsibilities.
+                    </p>
+                </article>
+            </section>
+
+            <!-- Featured Projects -->
+            <section class="featured-section">
+                <h2>Featured Projects</h2>
+                <div class="featured-grid">
+                    <a href="ecotech.html" class="featured-card" aria-label="View Ecotech Institute project">
+                        <div class="featured-image" style="background-image: url('img/ecotech/1.png')"></div>
+                        <div class="featured-label">Ecotech Institute</div>
+                    </a>
+                    <a href="usf.html" class="featured-card" aria-label="View University of South Florida project">
+                        <div class="featured-image" style="background-image: url('img/usf/1.png')"></div>
+                        <div class="featured-label">USF: The Village</div>
+                    </a>
+                    <a href="fortcollins.html" class="featured-card" aria-label="View Cottages of Fort Collins project">
+                        <div class="featured-image" style="background-image: url('img/fortcollins/1.png')"></div>
+                        <div class="featured-label">Cottages of Fort Collins</div>
+                    </a>
+                </div>
+                <p class="featured-cta">
+                    <a href="portfolio.html" class="btn-secondary">
+                        View Full Portfolio
+                        <i data-lucide="arrow-right" class="icon"></i>
+                    </a>
                 </p>
-            </article>
+            </section>
+
+            <!-- Expertise Section -->
+            <section class="expertise-section">
+                <h2>Areas of Expertise</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <i data-lucide="building-2" class="expertise-icon"></i>
+                        <h3>Student Housing</h3>
+                        <p>Designing functional, durable, and inviting residential spaces for university communities.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <i data-lucide="store" class="expertise-icon"></i>
+                        <h3>Commercial Interiors</h3>
+                        <p>Creating professional environments that balance aesthetics with operational efficiency.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <i data-lucide="armchair" class="expertise-icon"></i>
+                        <h3>FF&E Management</h3>
+                        <p>Full-service furniture, fixtures, and equipment specification, procurement, and installation.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <i data-lucide="graduation-cap" class="expertise-icon"></i>
+                        <h3>Educational Facilities</h3>
+                        <p>Spaces that support learning, collaboration, and student well-being.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact CTA -->
+            <section class="cta-section">
+                <h2>Let's Connect</h2>
+                <p>Interested in collaborating or learning more about my work?</p>
+                <a href="contact.html" class="btn-primary">
+                    <i data-lucide="mail" class="icon"></i>
+                    Get in Touch
+                </a>
+            </section>
         </div>
     </main>
 
