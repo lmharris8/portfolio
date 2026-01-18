@@ -1,0 +1,138 @@
+/* ================================
+   THESIS PAGE
+   Thesis Hero, Findings Grid
+   ================================ */
+
+.thesis-hero {
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.thesis-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-sm);
+}
+
+.thesis-subtitle {
+    font-size: 0.9375rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+}
+
+.thesis-award {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: linear-gradient(135deg, rgba(160, 44, 61, 0.1) 0%, rgba(160, 44, 61, 0.05) 100%);
+    border-radius: 100px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.thesis-award-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.thesis-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.thesis-section h2 {
+    text-align: left;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Findings Grid */
+.findings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.finding-card {
+    padding: var(--spacing-lg);
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.finding-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.finding-number {
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0 auto var(--spacing-sm);
+}
+
+.finding-card h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 var(--spacing-sm);
+}
+
+.finding-card p {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Thesis CTA */
+.thesis-cta {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.thesis-cta h2 {
+    margin: 0 0 var(--spacing-sm);
+}
+
+.thesis-cta p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+}
+
+/* ================================
+   RESPONSIVE - Mobile
+   ================================ */
+@media (max-width: 768px) {
+    .thesis-title {
+        font-size: 1.375rem;
+    }
+    
+    .findings-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .finding-card {
+        padding: var(--spacing-md);
+    }
+    
+    .thesis-cta {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+}

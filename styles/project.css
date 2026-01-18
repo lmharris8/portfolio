@@ -1,0 +1,270 @@
+/* ================================
+   PROJECT PAGES
+   Split Layout, Gallery, GLightbox, Content Article
+   ================================ */
+
+/* Gallery Layout */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.gallery-image-panel {
+    flex: 1;
+    min-width: 300px;
+}
+
+.gallery-description-panel {
+    flex: 1;
+    min-width: 300px;
+}
+
+.project-role {
+    color: var(--color-text-light);
+    font-style: italic;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* GLightbox Overrides */
+.gslide-description {
+    background: transparent !important;
+}
+
+.glightbox-clean .gslide-description {
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.6)) !important;
+}
+
+.glightbox-clean .gclose,
+.glightbox-clean .gnext,
+.glightbox-clean .gprev {
+    background: var(--color-primary) !important;
+    border-radius: 50%;
+    opacity: 0.9;
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.glightbox-clean .gclose svg,
+.glightbox-clean .gnext svg,
+.glightbox-clean .gprev svg {
+    fill: var(--color-white) !important;
+}
+
+.glightbox-clean .gclose:hover,
+.glightbox-clean .gnext:hover,
+.glightbox-clean .gprev:hover {
+    background: var(--color-primary-dark) !important;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Content Article */
+.content-article {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Project Detail Split Layout */
+.project-split {
+    display: flex;
+    height: calc(100vh - var(--header-height) - 2px);
+    overflow: hidden;
+}
+
+.project-info-panel {
+    flex: 0 0 38%;
+    max-width: 480px;
+    height: 100%;
+    overflow-y: auto;
+    padding: var(--spacing-2xl) var(--spacing-xl);
+    background: var(--color-bg-alt);
+    border-right: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info-panel .project-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text);
+}
+
+.project-info-panel .project-role {
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    font-style: italic;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.project-info-panel .project-description {
+    flex: 1;
+}
+
+.project-info-panel .project-description p {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.project-info-panel .back-link {
+    margin-top: auto;
+    padding-top: var(--spacing-lg);
+}
+
+.project-gallery-panel {
+    flex: 1;
+    padding: var(--spacing-lg);
+    overflow-y: auto;
+}
+
+/* Masonry Gallery Grid */
+.masonry-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-auto-rows: 180px;
+    gap: var(--spacing-md);
+    grid-auto-flow: dense;
+}
+
+.masonry-gallery a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.masonry-gallery a:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
+    z-index: 1;
+}
+
+.masonry-gallery a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-primary);
+}
+
+.masonry-gallery .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.masonry-gallery a:hover .gallery-img {
+    transform: scale(1.05);
+}
+
+/* Masonry size variants */
+.masonry-gallery .featured {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.masonry-gallery .tall {
+    grid-row: span 2;
+}
+
+.masonry-gallery .wide {
+    grid-column: span 2;
+}
+
+.masonry-gallery .large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* Results List */
+.results-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-sm) 0 var(--spacing-md);
+}
+
+.results-list li {
+    padding: var(--spacing-xs) 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.9375rem;
+}
+
+/* ================================
+   RESPONSIVE - Mobile
+   ================================ */
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+    }
+    
+    .gallery-image-panel,
+    .gallery-description-panel {
+        min-width: 100%;
+    }
+    
+    /* Project Split Layout - Mobile */
+    .project-split {
+        flex-direction: column;
+        height: auto;
+        min-height: auto;
+        overflow: visible;
+    }
+    
+    .project-info-panel {
+        position: static;
+        height: auto;
+        flex: none;
+        max-width: none;
+        padding: var(--spacing-lg) var(--spacing-md);
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+    }
+    
+    .project-info-panel .project-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .project-info-panel .project-role {
+        text-align: center;
+    }
+    
+    .project-info-panel .back-link {
+        text-align: center;
+    }
+    
+    .project-gallery-panel {
+        padding: var(--spacing-md);
+    }
+    
+    /* Masonry Gallery - Mobile */
+    .masonry-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 140px;
+        gap: var(--spacing-sm);
+    }
+    
+    .masonry-gallery .featured {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    
+    .masonry-gallery .tall {
+        grid-row: span 1;
+    }
+    
+    .masonry-gallery .wide {
+        grid-column: span 2;
+    }
+    
+    .masonry-gallery .large {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
