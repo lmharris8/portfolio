@@ -5,14 +5,25 @@
 let lightbox = null;
 
 /**
+ * Per-gallery configuration for thumbnail display
+ * zoom: { imageNumber: scaleValue } - higher values show less of the image
+ */
+const galleryConfig = {
+    ecotech: {
+        zoom: { 8: 9, 9: 3, 10: 5, 11: 3 },
+        border: [8, 9, 10, 11],
+    },
+};
+
+/**
  * Initialize gallery from data attributes on body
  */
 function initGallery() {
     const body = document.body;
     const folder = body.dataset.gallery;
     const count = parseInt(body.dataset.galleryCount, 10);
-    const gallery = document.getElementById('gallery');
-    
+    const gallery = document.getElementById("gallery");
+
     if (folder && count && gallery) {
         renderThumbnails(gallery, folder, count);
     }
@@ -24,19 +35,22 @@ function initGallery() {
  */
 function getMasonryClass(index, total) {
     // First image is always featured (large)
-    if (index === 0) return 'featured';
-    
+    if (index === 0) return "featured";
+
     // For small galleries, keep it simple
-    if (total <= 4) return '';
-    
+    if (total <= 4) return "";
+
     // Create a varied pattern for larger galleries
     // Pattern repeats every 6 images after the featured one
     const patternIndex = (index - 1) % 6;
-    
+
     switch (patternIndex) {
-        case 1: return 'tall';
-        case 3: return 'wide';
-        default: return '';
+        case 1:
+            return "tall";
+        case 3:
+            return "wide";
+        default:
+            return "";
     }
 }
 
@@ -45,14 +59,14 @@ function getMasonryClass(index, total) {
  * Supports both legacy thumbnail grid and new masonry layout
  */
 function renderThumbnails(gallery, folder, total) {
-    const isMasonry = gallery.classList.contains('masonry-gallery');
-    
+    const isMasonry = gallery.classList.contains("masonry-gallery");
+
     if (isMasonry) {
         renderMasonryGallery(gallery, folder, total);
     } else {
         renderLegacyThumbnails(gallery, folder, total);
     }
-    
+
     // Initialize GLightbox after thumbnails are rendered
     initLightbox();
 }
@@ -61,24 +75,32 @@ function renderThumbnails(gallery, folder, total) {
  * Render masonry gallery with varied image sizes
  */
 function renderMasonryGallery(gallery, folder, total) {
+    const config = galleryConfig[folder] || {};
+
     const thumbnails = Array.from({ length: total }, (_, i) => {
         const num = i + 1;
         const sizeClass = getMasonryClass(i, total);
-        
+        const zoom = config.zoom?.[num];
+        const hasBorder = config.border?.includes(num);
+        const imgStyle = zoom ? `transform: scale(${zoom})` : "";
+        const linkStyle = hasBorder ? "border: 1px solid var(--color-border)" : "";
+
         return `
             <a href="img/${folder}/${num}.png" 
                class="glightbox ${sizeClass}"
                data-gallery="project-gallery"
                role="listitem"
-               aria-label="View image ${num} of ${total}">
+               aria-label="View image ${num} of ${total}"
+               style="${linkStyle}">
                 <img src="img/${folder}/${num}.png" 
                      class="gallery-img"
                      alt="Project image ${num}"
-                     loading="${i < 4 ? 'eager' : 'lazy'}">
+                     loading="${i < 4 ? "eager" : "lazy"}"
+                     style="${imgStyle}">
             </a>
         `;
-    }).join('');
-    
+    }).join("");
+
     gallery.innerHTML = thumbnails;
 }
 
@@ -87,8 +109,8 @@ function renderMasonryGallery(gallery, folder, total) {
  */
 function renderLegacyThumbnails(gallery, folder, total) {
     const isLarge = total === 1;
-    const className = isLarge ? 'thumbnail-large' : 'thumbnail';
-    
+    const className = isLarge ? "thumbnail-large" : "thumbnail";
+
     const thumbnails = Array.from({ length: total }, (_, i) => {
         const num = i + 1;
         return `
@@ -104,8 +126,8 @@ function renderLegacyThumbnails(gallery, folder, total) {
                      aria-label="Project image ${num}"></div>
             </a>
         `;
-    }).join('');
-    
+    }).join("");
+
     gallery.innerHTML = thumbnails;
 }
 
@@ -113,16 +135,16 @@ function renderLegacyThumbnails(gallery, folder, total) {
  * Initialize GLightbox
  */
 function initLightbox() {
-    if (typeof GLightbox !== 'undefined') {
+    if (typeof GLightbox !== "undefined") {
         lightbox = GLightbox({
-            selector: '.glightbox',
+            selector: ".glightbox",
             touchNavigation: true,
             loop: true,
             autoplayVideos: false,
-            openEffect: 'fade',
-            closeEffect: 'fade',
-            slideEffect: 'fade',
-            preload: true
+            openEffect: "fade",
+            closeEffect: "fade",
+            slideEffect: "fade",
+            preload: true,
         });
     }
 }
@@ -131,7 +153,7 @@ function initLightbox() {
  * Initialize Lucide icons
  */
 function initLucide() {
-    if (typeof lucide !== 'undefined') {
+    if (typeof lucide !== "undefined") {
         lucide.createIcons();
     }
 }
@@ -142,17 +164,17 @@ function initLucide() {
 function init() {
     // Initialize Lucide icons
     initLucide();
-    
+
     // Initialize gallery if present
     initGallery();
-    
+
     // Initialize lightbox for any static glightbox links (like rubric page)
     initLightbox();
 }
 
 // Initialize when DOM is ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
 } else {
     init();
 }
