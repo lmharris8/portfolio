@@ -40,7 +40,6 @@
 .glightbox-clean .gnext,
 .glightbox-clean .gprev {
     background: var(--color-primary) !important;
-    border-radius: 50%;
     opacity: 0.9;
     transition: opacity var(--transition-fast), transform var(--transition-fast);
 }

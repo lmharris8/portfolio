@@ -56,7 +56,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
     transition: box-shadow var(--transition-normal), transform var(--transition-normal);
 }

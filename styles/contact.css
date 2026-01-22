@@ -60,7 +60,6 @@
 .contact-headshot {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
     object-fit: cover;
     box-shadow: var(--shadow-md);
     margin-bottom: var(--spacing-md);

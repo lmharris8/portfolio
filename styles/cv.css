@@ -149,7 +149,6 @@
     width: 14px;
     height: 14px;
     background: var(--color-primary);
-    border-radius: 50%;
 }
 
 .cv-timeline-year {
@@ -231,7 +230,6 @@
     padding: var(--spacing-xs) var(--spacing-sm);
     background: var(--color-white);
     border: 1px solid var(--color-border);
-    border-radius: 100px;
     font-size: 0.8125rem;
     color: var(--color-text);
     transition: border-color var(--transition-fast), background var(--transition-fast);
