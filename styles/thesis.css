@@ -114,6 +114,10 @@
     margin-bottom: var(--spacing-md);
 }
 
+.content-article {
+    padding-bottom: var(--spacing-xl);
+}
+
 /* ================================
    RESPONSIVE - Mobile
    ================================ */

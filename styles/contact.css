@@ -86,6 +86,10 @@
     color: var(--color-primary);
 }
 
+.contact-content {
+    padding-bottom: var(--spacing-xl);
+}
+
 /* ================================
    RESPONSIVE - Mobile
    ================================ */

@@ -1,75 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Yeager Residence - Interior design project by Laura Harris.">
-    <title>Laura Harris | Yeager Residence</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/project.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Yeager Residence - Interior design project by Laura Harris." />
+        <title>Laura Harris | Yeager Residence</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/components.css" />
+        <link rel="stylesheet" href="styles/project.css" />
 
-    <!-- Favicon Files -->
-    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Laura Harris" />
+        <!-- Favicon Files -->
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Laura Harris" />
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body data-gallery="yeager" data-gallery-count="12">
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+        <script src="https://unpkg.com/lucide@latest"></script>
+    </head>
+    <body data-gallery="yeager" data-gallery-count="12">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header>
-        <nav id="navbar" aria-label="Main navigation">
-            <button type="button" id="menubutton" onclick="toggleNavbar()" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">&#9776;</button>
-            <span class="square" aria-hidden="true"></span>
-            <span id="title">LAURA HARRIS</span>
-            <span class="spacer"></span>
-            <div id="navlinks">
-                <ul>
-                    <li><a href="index.html" class="navLink">HOME</a></li>
-                    <li><a href="portfolio.html" class="navLink active-link" aria-current="page">PORTFOLIO</a></li>
-                    <li><a href="cv.html" class="navLink">CURRICULUM VITAE</a></li>
-                    <li><a href="thesis.html" class="navLink">THESIS</a></li>
-                    <li><a href="contact.html" class="navLink">CONTACT</a></li>
-                </ul>
-            </div>
-            <div id="nav-backdrop" aria-hidden="true"></div>
-        </nav>
-    </header>
-
-    <main id="main-content">
-        <div class="project-split">
-            <aside class="project-info-panel">
-                <h1 class="project-title">Yeager Residence</h1>
-                <p class="project-role">Designer and Project Manager</p>
-                <div class="project-description">
-                    <p>The Yeager family enlisted Laura Harris to lead the renovation of their 1920s Birmingham bungalow in the Crestwood neighborhood. After 12 years in the home, the family of four needed to reconfigure the single-bathroom residence to accommodate their evolving needs while preserving the character of the historic house.</p>
-
-                    <p>Laura drafted construction plans to maximize the existing footprint with only a 3-foot-deep addition across the rear of the home. The project scope included adding a second bathroom, enlarging closets, and closing off impractical doorways. She brought the basement staircase up to code to create a finished living area with a Murphy bed and reconstructed the utility room into a primary bath, walk-in closet, and multi-purpose laundry room. To maintain budget, Laura prioritized reusing existing doors, windows, and plumbing locations wherever possible. The project was <a href="https://www.southernliving.com/mackin-thompson-birmingham-home-tour-8786140" target="_blank" rel="noopener">featured in Southern Living</a>.</p>
+        <header>
+            <nav id="navbar" aria-label="Main navigation">
+                <button
+                    type="button"
+                    id="menubutton"
+                    onclick="toggleNavbar()"
+                    aria-expanded="false"
+                    aria-controls="navlinks"
+                    aria-label="Toggle navigation menu"
+                >
+                    &#9776;
+                </button>
+                <span class="square" aria-hidden="true"></span>
+                <span id="title">LAURA HARRIS</span>
+                <span class="spacer"></span>
+                <div id="navlinks">
+                    <ul>
+                        <li><a href="index.html" class="navLink">HOME</a></li>
+                        <li><a href="portfolio.html" class="navLink active-link" aria-current="page">PORTFOLIO</a></li>
+                        <li><a href="cv.html" class="navLink">CURRICULUM VITAE</a></li>
+                        <li><a href="thesis.html" class="navLink">THESIS</a></li>
+                        <li><a href="contact.html" class="navLink">CONTACT</a></li>
+                    </ul>
                 </div>
-                <p class="back-link">
-                    <a href="portfolio.html">
-                        <i data-lucide="arrow-left" class="icon"></i>
-                        Back to Portfolio
-                    </a>
-                </p>
-            </aside>
-            <div class="project-gallery-panel">
-                <div id="gallery" class="masonry-gallery" role="list" aria-label="Project images"></div>
+                <div id="nav-backdrop" aria-hidden="true"></div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <div class="project-split">
+                <aside class="project-info-panel">
+                    <h1 class="project-title">Yeager Residence</h1>
+                    <p class="project-role">Designer and Project Manager</p>
+                    <div class="project-description">
+                        <p>
+                            The Yeager family engaged Laura Harris to lead the renovation of their 1920s bungalow
+                            located in Birmingham’s Crestwood neighborhood. After more than a decade in the home, the
+                            family of four required a comprehensive interior reconfiguration to improve functionality
+                            and flow—most critically, expanding the single-bathroom layout—while preserving the
+                            architectural character and charm of the historic residence.
+                        </p>
+
+                        <p>
+                            Laura was responsible for producing the full construction document set and managing the
+                            project through construction administration over a two-year timeline. The scope included a
+                            full interior gut renovation and the demolition of a poorly constructed rear sunroom, which
+                            was replaced with a new addition extending three feet beyond the existing footprint. All
+                            design decisions were carefully evaluated against local zoning, setback requirements, and
+                            building codes to ensure compliance while maximizing usable space. Select components of the
+                            permit set, including the basement stair modifications, were developed in collaboration with
+                            a licensed architect to ensure compliance with local building codes.
+                        </p>
+
+                        <p>
+                            The renovation introduced a second bathroom, improved storage through enlarged closets, and
+                            eliminated impractical circulation patterns created by redundant doorways. Laura brought the
+                            existing basement stair into code compliance to create a finished lower-level living space
+                            with integrated guest accommodations. The former utility room was reconfigured into a
+                            primary bathroom, walk-in closet, and multifunctional laundry space. Throughout the project,
+                            budget-conscious strategies guided decision-making, including the selective reuse of
+                            existing doors, windows, and plumbing locations wherever feasible.
+                        </p>
+
+                        <p>
+                            The completed renovation successfully modernized the home’s spatial organization while
+                            maintaining its original bungalow character. The project was featured in Southern Living,
+                            highlighting its thoughtful balance of preservation, functionality, and livability.
+                        </p>
+
+                        <p>
+                            Interior Design: Laura Harris<br />Consulting Architect: Allison Vosicky<br />Finish and
+                            Furniture Selection: Mackin Thompson
+                        </p>
+                    </div>
+                    <p class="back-link">
+                        <a href="portfolio.html">
+                            <i data-lucide="arrow-left" class="icon"></i>
+                            Back to Portfolio
+                        </a>
+                    </p>
+                </aside>
+                <div class="project-gallery-panel">
+                    <div id="gallery" class="masonry-gallery" role="list" aria-label="Project images"></div>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
 
-
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="scripts/header.js"></script>
-    <script src="scripts/script.js"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+        <script src="scripts/header.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
 </html>
