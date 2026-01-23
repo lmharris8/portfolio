@@ -9,7 +9,11 @@ let lightbox = null;
  * zoom: { imageNumber: scaleValue } - higher values show less of the image
  * border: [imageNumbers] - adds border to specified images
  */
-const galleryConfig = {};
+const galleryConfig = {
+    usf: {
+        border: [15, 16, 17, 18, 19],
+    },
+};
 
 /**
  * Initialize gallery from data attributes on body
@@ -79,7 +83,7 @@ function renderMasonryGallery(gallery, folder, total) {
         const zoom = config.zoom?.[num];
         const hasBorder = config.border?.includes(num);
         const imgStyle = zoom ? `transform: scale(${zoom})` : "";
-        const linkStyle = hasBorder ? "border: 1px solid var(--color-border)" : "";
+        const linkStyle = hasBorder ? "border: 1px solid rgba(0, 0, 0, 0.15)" : "";
 
         return `
             <a href="img/${folder}/${num}.png" 
