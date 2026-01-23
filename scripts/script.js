@@ -7,13 +7,9 @@ let lightbox = null;
 /**
  * Per-gallery configuration for thumbnail display
  * zoom: { imageNumber: scaleValue } - higher values show less of the image
+ * border: [imageNumbers] - adds border to specified images
  */
-const galleryConfig = {
-    ecotech: {
-        zoom: { 8: 9, 9: 3, 10: 5, 11: 3 },
-        border: [8, 9, 10, 11],
-    },
-};
+const galleryConfig = {};
 
 /**
  * Initialize gallery from data attributes on body

@@ -33,7 +33,7 @@
 }
 
 .glightbox-clean .gslide-description {
-    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.6)) !important;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)) !important;
 }
 
 .glightbox-clean .gclose,
@@ -181,6 +181,82 @@
     grid-row: span 2;
 }
 
+/* Custom Gallery Section - manually coded thumbnails */
+.custom-gallery-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-auto-rows: 180px;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.custom-gallery-section a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.custom-gallery-section a:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
+    z-index: 1;
+}
+
+.custom-gallery-section a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-primary);
+}
+
+.custom-gallery-section .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.custom-gallery-section a:hover .gallery-img {
+    transform: scale(1.05);
+}
+
+/* Custom gallery size variants */
+.custom-gallery-section .featured {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.custom-gallery-section .tall {
+    grid-row: span 2;
+}
+
+.custom-gallery-section .wide {
+    grid-column: span 2;
+}
+
+.custom-gallery-section .large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.custom-gallery-section .overlay-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    padding: var(--spacing-sm);
+    pointer-events: none;
+    letter-spacing: 0.05em;
+}
+
 /* Results List */
 .results-list {
     list-style: none;
@@ -201,12 +277,12 @@
     .gallery-container {
         flex-direction: column;
     }
-    
+
     .gallery-image-panel,
     .gallery-description-panel {
         min-width: 100%;
     }
-    
+
     /* Project Split Layout - Mobile */
     .project-split {
         flex-direction: column;
@@ -214,7 +290,7 @@
         min-height: auto;
         overflow: visible;
     }
-    
+
     .project-info-panel {
         position: static;
         height: auto;
@@ -224,46 +300,68 @@
         border-right: none;
         border-bottom: 1px solid var(--color-border);
     }
-    
+
     .project-info-panel .project-title {
         font-size: 1.5rem;
         text-align: center;
     }
-    
+
     .project-info-panel .project-role {
         text-align: center;
     }
-    
+
     .project-info-panel .back-link {
         text-align: center;
     }
-    
+
     .project-gallery-panel {
         padding: var(--spacing-md);
     }
-    
+
     /* Masonry Gallery - Mobile */
     .masonry-gallery {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 140px;
         gap: var(--spacing-sm);
     }
-    
+
     .masonry-gallery .featured {
         grid-column: span 2;
         grid-row: span 1;
     }
-    
+
     .masonry-gallery .tall {
         grid-row: span 1;
     }
-    
+
     .masonry-gallery .wide {
         grid-column: span 2;
     }
-    
+
     .masonry-gallery .large {
         grid-column: span 2;
         grid-row: span 1;
+    }
+
+    /* Custom Gallery Section - Mobile */
+    .custom-gallery-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 140px;
+        gap: var(--spacing-sm);
+    }
+
+    .custom-gallery-section .featured,
+    .custom-gallery-section .large {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .custom-gallery-section .tall {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .custom-gallery-section .wide {
+        grid-column: span 2;
     }
 }
