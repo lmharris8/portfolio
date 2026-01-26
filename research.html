@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Research interests of Laura Harris, interior design educator focused on educational facility design and adolescent social development."
+        />
+        <title>Laura Harris | Research Interests</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/components.css" />
+        <link rel="stylesheet" href="styles/thesis.css" />
+
+        <!-- Favicon Files -->
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Laura Harris" />
+
+        <script src="https://unpkg.com/lucide@latest"></script>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <header>
+            <nav id="navbar" aria-label="Main navigation">
+                <button
+                    type="button"
+                    id="menubutton"
+                    onclick="toggleNavbar()"
+                    aria-expanded="false"
+                    aria-controls="navlinks"
+                    aria-label="Toggle navigation menu"
+                >
+                    &#9776;
+                </button>
+                <span class="square" aria-hidden="true"></span>
+                <span id="title">LAURA HARRIS</span>
+                <span class="spacer"></span>
+                <div id="navlinks">
+                    <ul>
+                        <li><a href="index.html" class="navLink">HOME</a></li>
+                        <li><a href="portfolio.html" class="navLink">PORTFOLIO</a></li>
+                        <li><a href="cv.html" class="navLink">CURRICULUM VITAE</a></li>
+                        <li><a href="research.html" class="navLink active-link" aria-current="page">RESEARCH</a></li>
+                        <li><a href="contact.html" class="navLink">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div id="nav-backdrop" aria-hidden="true"></div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <div id="container">
+                <h1 class="page-title">Research Interests</h1>
+
+                <article class="content-article">
+                    <p>
+                        My research interests are grounded in the relationship between interior environments and human
+                        behavior, with particular attention to social engagement, equity, and everyday lived experience.
+                        As an undergraduate at Samford University, I completed an honors anthropology course that
+                        examined disciplinary inquiry through an anthropological lens. In one case study, I examined the
+                        evolution of residential kitchen design alongside the rise of feminism, revealing how domestic
+                        interiors reflect shifting social structures, gender roles, and patterns of engagement. This
+                        early work prompted a sustained interest in the intersection of interior design and social
+                        behavior.
+                    </p>
+
+                    <p>
+                        Building on these ideas, my master's thesis investigated how educational facility design
+                        influences adolescent social interaction. My research demonstrated that social development plays
+                        a critical role in adolescent health and well-being, highlighting the need for intentional
+                        interior design strategies that support meaningful social engagement within educational
+                        environments. This work serves as the foundation for my ongoing scholarly interests at the
+                        intersection of interior design, psychology, and sociology, with an emphasis on evidence-based
+                        approaches to human-centered environments.
+                    </p>
+
+                    <p>
+                        I believe research in interior design should bridge academic theory and professional practice
+                        while remaining socially relevant and accessible. I am particularly interested in design inquiry
+                        that addresses everyday experience, including small-scale residential and community-focused
+                        environments that serve individuals and families beyond large institutional or high-budget
+                        contexts. I view this work as an opportunity to connect scholarship, teaching, and professional
+                        practice in ways that support equity, ethical responsibility, and meaningful impact.
+                    </p>
+
+                    <section class="thesis-cta">
+                        <h2>Master's Thesis</h2>
+                        <p>
+                            Read about my research on designing educational facilities for social engagement in
+                            adolescents.
+                        </p>
+                        <a href="thesis.html" class="btn-primary">
+                            <i data-lucide="book-open" class="icon"></i>
+                            View Thesis
+                        </a>
+                    </section>
+                </article>
+            </div>
+        </main>
+
+        <script src="scripts/header.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
