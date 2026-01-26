@@ -160,6 +160,10 @@ a:focus-visible {
     display: none !important;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 /* Main Layout */
 main {
     flex: 1;

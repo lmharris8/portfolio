@@ -126,6 +126,10 @@
         font-size: 1.375rem;
     }
     
+    .thesis-title .nowrap {
+        white-space: normal;
+    }
+    
     .findings-grid {
         grid-template-columns: 1fr;
     }
