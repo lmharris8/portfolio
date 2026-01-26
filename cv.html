@@ -1,457 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Curriculum Vitae of Laura Harris - Education, experience, and credentials in interior design.">
-    <title>Laura Harris | Curriculum Vitae</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/cv.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Curriculum Vitae of Laura Harris - Education, experience, and credentials in interior design."
+        />
+        <title>Laura Harris | Curriculum Vitae</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/components.css" />
+        <link rel="stylesheet" href="styles/home.css" />
+        <link rel="stylesheet" href="styles/cv.css" />
 
-    <!-- Favicon Files -->
-    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Laura Harris" />
+        <!-- Favicon Files -->
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Laura Harris" />
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+        <script src="https://unpkg.com/lucide@latest"></script>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header>
-        <nav id="navbar" aria-label="Main navigation">
-            <button type="button" id="menubutton" onclick="toggleNavbar()" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">&#9776;</button>
-            <span class="square" aria-hidden="true"></span>
-            <span id="title">LAURA HARRIS</span>
-            <span class="spacer"></span>
-            <div id="navlinks">
-                <ul>
-                    <li><a href="index.html" class="navLink">HOME</a></li>
-                    <li><a href="portfolio.html" class="navLink">PORTFOLIO</a></li>
-                    <li><a href="cv.html" class="navLink active-link" aria-current="page">CURRICULUM VITAE</a></li>
-                    <li><a href="research.html" class="navLink">RESEARCH</a></li>
-                    <li><a href="contact.html" class="navLink">CONTACT</a></li>
-                </ul>
+        <header>
+            <nav id="navbar" aria-label="Main navigation">
+                <button
+                    type="button"
+                    id="menubutton"
+                    onclick="toggleNavbar()"
+                    aria-expanded="false"
+                    aria-controls="navlinks"
+                    aria-label="Toggle navigation menu"
+                >
+                    &#9776;
+                </button>
+                <span class="square" aria-hidden="true"></span>
+                <span id="title">LAURA HARRIS</span>
+                <span class="spacer"></span>
+                <div id="navlinks">
+                    <ul>
+                        <li><a href="index.html" class="navLink">HOME</a></li>
+                        <li><a href="portfolio.html" class="navLink">PORTFOLIO</a></li>
+                        <li><a href="cv.html" class="navLink active-link" aria-current="page">CURRICULUM VITAE</a></li>
+                        <li><a href="research.html" class="navLink">RESEARCH</a></li>
+                        <li><a href="contact.html" class="navLink">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div id="nav-backdrop" aria-hidden="true"></div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <div id="container">
+                <h1 class="page-title">Curriculum Vitae</h1>
+                <div class="center">
+                    <a href="pdf/cv.pdf" target="_blank" rel="noopener" class="download-btn">
+                        <i data-lucide="download" class="icon"></i>
+                        Download PDF
+                    </a>
+                </div>
+
+                <!-- Highlights Bar -->
+                <section class="cv-highlights" aria-label="Career highlights">
+                    <div class="cv-stat">
+                        <i data-lucide="briefcase" class="cv-stat-icon"></i>
+                        <span class="cv-stat-value">15+</span>
+                        <span class="cv-stat-label">Years Experience</span>
+                    </div>
+                    <div class="cv-stat">
+                        <i data-lucide="graduation-cap" class="cv-stat-icon"></i>
+                        <span class="cv-stat-value">MFA</span>
+                        <span class="cv-stat-label">Interior Design</span>
+                    </div>
+                    <div class="cv-stat">
+                        <i data-lucide="badge-check" class="cv-stat-icon"></i>
+                        <span class="cv-stat-value">3</span>
+                        <span class="cv-stat-label">Certifications</span>
+                    </div>
+                    <div class="cv-stat">
+                        <i data-lucide="trophy" class="cv-stat-icon"></i>
+                        <span class="cv-stat-value">ASID</span>
+                        <span class="cv-stat-label">Award Recipient</span>
+                    </div>
+                </section>
+
+                <!-- Education Timeline -->
+                <section id="education" class="cv-section">
+                    <h2 class="cv-header">
+                        <i data-lucide="graduation-cap" class="cv-header-icon"></i>
+                        Education
+                    </h2>
+                    <div class="cv-timeline">
+                        <div class="cv-timeline-item">
+                            <div class="cv-timeline-marker">
+                                <span class="cv-timeline-year">2019</span>
+                            </div>
+                            <div class="cv-timeline-content">
+                                <h3>Master of Fine Arts in Interior Design</h3>
+                                <p class="cv-timeline-org">Brenau University, Atlanta, GA</p>
+                                <ul class="cv-list">
+                                    <li>Terminal degree with focus on teaching at collegiate level</li>
+                                    <li>GPA: 4.0 / Concentration: Human Environment</li>
+                                    <li>Graduate student assistantship, Interior Design Department (2014-2016)</li>
+                                    <li>
+                                        Thesis: Designing Educational Facilities for Social Engagement in Adolescents
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-timeline-item">
+                            <div class="cv-timeline-marker">
+                                <span class="cv-timeline-year">2009</span>
+                            </div>
+                            <div class="cv-timeline-content">
+                                <h3>Bachelor of Fine Arts + Honors in Interior Design</h3>
+                                <p class="cv-timeline-org">Samford University, Birmingham, AL</p>
+                                <ul class="cv-list">
+                                    <li>CIDA accredited undergraduate program</li>
+                                    <li>GPA: 3.86 / Fulfilled honors program requirements</li>
+                                    <li>Interior Design Department Outstanding Senior Award</li>
+                                    <li>Interior Design Department Student Organization President (2008-2009)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications Cards -->
+                <section id="certifications" class="cv-section">
+                    <h2 class="cv-header">
+                        <i data-lucide="award" class="cv-header-icon"></i>
+                        Registrations &amp; Certifications
+                    </h2>
+                    <div class="cv-certifications">
+                        <div class="credential-card">
+                            <i data-lucide="badge-check" class="credential-icon"></i>
+                            <span class="credential-abbr">RID</span>
+                            <span class="credential-desc">AL State Registered Interior Designer</span>
+                            <span class="credential-year">2012</span>
+                        </div>
+                        <div class="credential-card">
+                            <i data-lucide="award" class="credential-icon"></i>
+                            <span class="credential-abbr">NCIDQ</span>
+                            <span class="credential-desc">Council for Interior Design Qualification</span>
+                            <span class="credential-year">2012</span>
+                        </div>
+                        <div class="credential-card">
+                            <i data-lucide="leaf" class="credential-icon"></i>
+                            <span class="credential-abbr">LEED AP</span>
+                            <span class="credential-desc">Interior Design + Construction</span>
+                            <span class="credential-year">2009/2011</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Teaching Experience -->
+                <section id="teaching" class="cv-section">
+                    <h2 class="cv-header">
+                        <i data-lucide="book-open" class="cv-header-icon"></i>
+                        Academic Teaching Experience
+                    </h2>
+                    <div class="cv-timeline">
+                        <div class="cv-timeline-item">
+                            <div class="cv-timeline-marker">
+                                <span class="cv-timeline-year">2021 &amp; 2023</span>
+                            </div>
+                            <div class="cv-timeline-content">
+                                <h3>Guest Lecturer</h3>
+                                <p class="cv-timeline-org">
+                                    Auburn University — CADS 5400: Interior Design for Health &amp; Wellness
+                                </p>
+                                <ul class="cv-list">
+                                    <li>Created presentation content from Sloan and Delta research</li>
+                                    <li>Presented material online (2021) and in-person (2023)</li>
+                                    <li>
+                                        Addressed questions concerning plumbing products and designing for public health
+                                        and safety
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-timeline-item">
+                            <div class="cv-timeline-marker">
+                                <span class="cv-timeline-year">2019</span>
+                            </div>
+                            <div class="cv-timeline-content">
+                                <h3>Guest Reviewer</h3>
+                                <p class="cv-timeline-org">Samford University — IARC 252: Design Fundamentals II</p>
+                                <ul class="cv-list">
+                                    <li>Participated in mid-term and final student project reviews</li>
+                                    <li>
+                                        Evaluated space planning, design fundamentals, building codes, construction
+                                        methods, and presentations
+                                    </li>
+                                    <li>Offered constructive criticism regarding student projects</li>
+                                </ul>
+                                <p class="cv-intro">
+                                    Served as a guest critic for midterm and final project reviews (2020-2023)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cv-timeline-item">
+                            <div class="cv-timeline-marker">
+                                <span class="cv-timeline-year">2015</span>
+                            </div>
+                            <div class="cv-timeline-content">
+                                <h3>Student Teaching</h3>
+                                <p class="cv-timeline-org">
+                                    Brenau University — ID233: Computer Aided Drafting &amp; Design
+                                </p>
+                                <ul class="cv-list">
+                                    <li>
+                                        Online course with bi-weekly on-campus workshops focused on AutoCAD construction
+                                        documents (CIDA compliant)
+                                    </li>
+                                    <li>Designed syllabus, weekly Canvas modules, instruction videos, and exams</li>
+                                    <li>
+                                        Devised rubrics for assessments and provided detailed redline feedback on all
+                                        student projects
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Academic Presentations -->
+                <section id="presentations" class="cv-section">
+                    <h2 class="cv-header">
+                        <i data-lucide="presentation" class="cv-header-icon"></i>
+                        Academic Presentations
+                    </h2>
+                    <div class="cv-presentations">
+                        <div class="cv-presentation-item">
+                            <span class="cv-presentation-venue"
+                                >Interior Design Educators Council, Auburn, AL (2019)</span
+                            >
+                            <span class="cv-presentation-title"
+                                >South Regional Conference — Paper Presented: "Social Engagement in Educational Facility
+                                Design"</span
+                            >
+                        </div>
+                        <div class="cv-presentation-item">
+                            <span class="cv-presentation-venue">Brenau University, Atlanta, GA (2019)</span>
+                            <span class="cv-presentation-title"
+                                >Expand Your Horizons Research Symposium — Social Engagement in Educational Facility
+                                Design</span
+                            >
+                        </div>
+                        <div class="cv-presentation-item">
+                            <span class="cv-presentation-venue">Samford University, Birmingham, AL (2009)</span>
+                            <span class="cv-presentation-title"
+                                >Honors Program Capstone — Sustainable Design and LEED Requirements</span
+                            >
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Publications & Press -->
+                <section id="press" class="cv-section">
+                    <h2 class="cv-header">
+                        <i data-lucide="newspaper" class="cv-header-icon"></i>
+                        Publications &amp; Press
+                    </h2>
+                    <div class="highlight-box">
+                        <i data-lucide="book-open" class="highlight-icon"></i>
+                        <div class="highlight-content">
+                            <span class="highlight-label">Southern Living Magazine (2024–2025)</span>
+                            <ul class="cv-list">
+                                <li>
+                                    Interviewed for August 2024 articles:
+                                    <a
+                                        href="https://www.southernliving.com/home-renovation-priorities-according-to-expert-8693107"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >"The 5 Things You Should Prioritize When Renovating a Home on a Budget"</a
+                                    >
+                                    and "Designer Tips for Renovating a Home on a Budget"
+                                </li>
+                                <li>
+                                    Featured in March 2025 issue:
+                                    <a
+                                        href="https://www.southernliving.com/mackin-thompson-birmingham-home-tour-8786140"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >"Bungalow Revival"</a
+                                    >
+                                    — Yeager Residence, Birmingham, AL
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Awards -->
+                <section id="awards" class="cv-section">
+                    <h2 class="cv-header">
+                        <i data-lucide="trophy" class="cv-header-icon"></i>
+                        Awards
+                    </h2>
+                    <div class="highlight-box">
+                        <i data-lucide="trophy" class="highlight-icon"></i>
+                        <div class="highlight-content">
+                            <span class="highlight-label">2019 — Joel Polsky Academic Achievement Award</span>
+                            <p>
+                                National award from the American Society of Interior Designers, given to one outstanding
+                                graduate or undergraduate research project annually. Received $5,000 for thesis on
+                                educational facility design.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="highlight-box">
+                        <i data-lucide="award" class="highlight-icon"></i>
+                        <div class="highlight-content">
+                            <span class="highlight-label">2013 — IIDA "Best of Institutional" Award</span>
+                            <p>
+                                Team award for Ecotech Institute project at Education Corporation of America. Presented
+                                at IIDA Alabama's Biennial IDIE Awards Gala.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Professional Instruction -->
+                <section id="instruction" class="cv-section">
+                    <h2 class="cv-header">
+                        <i data-lucide="presentation" class="cv-header-icon"></i>
+                        Professional Instruction
+                    </h2>
+                    <p class="cv-intro">
+                        Approximately seventy-five accredited HSW continuing education courses delivered to architecture
+                        and interior design professionals since 2020, grounded in applicable building codes,
+                        accessibility standards, sustainability research, and best practices.
+                    </p>
+
+                    <h3 class="cv-skills-category">Representative Topics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Conserving Water through High Efficiency Fixtures</span>
+                        <span class="skill-tag">Specifying Plumbing Fixtures for K12 and Higher Education</span>
+                        <span class="skill-tag">Considerations for Accessible Design in Commercial Restrooms</span>
+                        <span class="skill-tag">Transforming Aging in Place to Aging with Grace</span>
+                        <span class="skill-tag">Sink Selection for Sustainability &amp; Accessibility</span>
+                    </div>
+
+                    <h3 class="cv-skills-category">Representative Organizations</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AIA Mississippi</span>
+                        <span class="skill-tag">AIA Mobile</span>
+                        <span class="skill-tag">AIA Montgomery</span>
+                        <span class="skill-tag">AIA North Alabama</span>
+                        <span class="skill-tag">AIA Northwest Florida</span>
+                        <span class="skill-tag">ASID Alabama</span>
+                        <span class="skill-tag">IIDA Alabama</span>
+                    </div>
+                </section>
+
+                <!-- Professional Experience Timeline -->
+                <section id="experience" class="cv-section">
+                    <h2 class="cv-header">
+                        <i data-lucide="briefcase" class="cv-header-icon"></i>
+                        Professional Experience
+                    </h2>
+                    <div class="cv-timeline">
+                        <div class="cv-timeline-item">
+                            <div class="cv-timeline-marker">
+                                <span class="cv-timeline-year">2020–Present</span>
+                            </div>
+                            <div class="cv-timeline-content">
+                                <h3>Design Educator &amp; Consultant</h3>
+                                <p class="cv-timeline-org">Will &amp; Pierce Agency, Daphne, AL</p>
+                                <ul class="cv-list">
+                                    <li>
+                                        Educate architects and designers on functionality, hygiene, and accessibility
+                                        requirements for commercial plumbing products
+                                    </li>
+                                    <li>
+                                        Present continuing education courses to AIA, ASID, and IIDA chapters across
+                                        Alabama, Mississippi, and Northwest Florida
+                                    </li>
+                                    <li>
+                                        Provide technical support from specification through final punch for specifiers
+                                        and manufacturers
+                                    </li>
+                                    <li>
+                                        Manage large-scale projects including Auburn University, Jackson Airport,
+                                        Huntsville Airport, Mobile Airport, Trenholm State Community College, Von Braun
+                                        Exhibition Hall, and others
+                                    </li>
+                                    <li>
+                                        Plan events for architects and designers to market products and provide
+                                        networking opportunities
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-timeline-item">
+                            <div class="cv-timeline-marker">
+                                <span class="cv-timeline-year">2015–2020</span>
+                            </div>
+                            <div class="cv-timeline-content">
+                                <h3>Interior Designer &amp; Project Manager</h3>
+                                <p class="cv-timeline-org">Capstone Real Estate Investments, Birmingham, AL</p>
+                                <ul class="cv-list">
+                                    <li>
+                                        Produced furniture packages of up to $5.5 million for student housing including
+                                        residential units, amenity spaces, classrooms, offices, and fitness centers
+                                    </li>
+                                    <li>
+                                        Developed construction drawings and furniture plans detailing placement,
+                                        electrical/data locations, millwork, and finishes
+                                    </li>
+                                    <li>
+                                        Led large-scale installations with pre-installation meetings, vendor
+                                        coordination, and punch list enforcement
+                                    </li>
+                                    <li>
+                                        Created vendor documentation including budgets, contracts, timelines, protocols,
+                                        and punch list guidelines
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-timeline-item">
+                            <div class="cv-timeline-marker">
+                                <span class="cv-timeline-year">2009–2015</span>
+                            </div>
+                            <div class="cv-timeline-content">
+                                <h3>Interior Designer</h3>
+                                <p class="cv-timeline-org">Education Corporation of America, Birmingham, AL</p>
+                                <ul class="cv-list">
+                                    <li>Assisted in production of construction drawings for new schools</li>
+                                    <li>Assisted existing schools with facility renovations and modifications</li>
+                                    <li>Selected finishes, materials, interior and exterior signage, and artwork</li>
+                                    <li>
+                                        Specified furniture for educational facilities and coordinated orders and
+                                        installations
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-timeline-item">
+                            <div class="cv-timeline-marker">
+                                <span class="cv-timeline-year">2008</span>
+                            </div>
+                            <div class="cv-timeline-content">
+                                <h3>Design Intern</h3>
+                                <p class="cv-timeline-org">Gresham Smith and Partners, Birmingham, AL</p>
+                                <ul class="cv-list">
+                                    <li>
+                                        Summer internship assisting professional designers and organizing materials
+                                        library
+                                    </li>
+                                    <li>Observed field conditions at local construction sites</li>
+                                    <li>Researched sustainability information for design team</li>
+                                    <li>Received additional training at corporate office in Nashville, Tennessee</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Organizations -->
+                <section id="organizations" class="cv-section">
+                    <h2 class="cv-header">
+                        <i data-lucide="users" class="cv-header-icon"></i>
+                        Professional Organizations
+                    </h2>
+                    <div class="cv-orgs">
+                        <div class="cv-org-item">
+                            <h3>International Interior Design Association (IIDA)</h3>
+                            <p class="cv-org-role">Professional Member, 2013–present</p>
+                            <ul class="cv-list">
+                                <li>Past President, Alabama Chapter (2021–2022)</li>
+                                <li>President (2020–2021)</li>
+                                <li>President Elect (2019–2020)</li>
+                                <li>Vice President of Communications (2013–2015, 2018–2019)</li>
+                                <li>Director of Communications (2012–2013)</li>
+                            </ul>
+                        </div>
+                        <div class="cv-org-item">
+                            <h3>Interior Design Educators Council (IDEC)</h3>
+                            <p class="cv-org-role">Graduate Student Member, 2019</p>
+                        </div>
+                        <div class="cv-org-item">
+                            <h3>Alabama Interior Design Coalition</h3>
+                            <p class="cv-org-role">Professional Member, 2013–present</p>
+                            <ul class="cv-list">
+                                <li>Communications Committee Chair (2022–present)</li>
+                                <li>IIDA Liaison (2020–2021)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section id="skills" class="cv-section">
+                    <h2 class="cv-header">
+                        <i data-lucide="wrench" class="cv-header-icon"></i>
+                        Skills
+                    </h2>
+                    <h3 class="cv-skills-category">Design Software</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Revit</span>
+                        <span class="skill-tag">AutoCAD</span>
+                        <span class="skill-tag">SketchUp</span>
+                        <span class="skill-tag">Adobe Photoshop</span>
+                        <span class="skill-tag">Gimp</span>
+                        <span class="skill-tag">Adobe Acrobat Pro</span>
+                        <span class="skill-tag">Canva</span>
+                    </div>
+                    <h3 class="cv-skills-category">Productivity &amp; Collaboration</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microsoft Office Suite</span>
+                        <span class="skill-tag">Google Workspace</span>
+                        <span class="skill-tag">Canvas LMS</span>
+                        <span class="skill-tag">Dropbox</span>
+                        <span class="skill-tag">OneDrive</span>
+                        <span class="skill-tag">Zoom</span>
+                        <span class="skill-tag">Teams</span>
+                        <span class="skill-tag">Skype</span>
+                        <span class="skill-tag">Prezi</span>
+                        <span class="skill-tag">Constant Contact</span>
+                        <span class="skill-tag">Cognito Forms</span>
+                    </div>
+                    <h3 class="cv-skills-category">Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">WordPress</span>
+                        <span class="skill-tag">Weebly</span>
+                        <span class="skill-tag">Wix</span>
+                    </div>
+                    <h3 class="cv-skills-category">Professional</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">FF&E Specification</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Written &amp; Oral Communication</span>
+                        <span class="skill-tag">Critical Thinking</span>
+                        <span class="skill-tag">Design Problem-Solving</span>
+                        <span class="skill-tag">Team Leadership</span>
+                        <span class="skill-tag">Student Mentorship</span>
+                    </div>
+                </section>
             </div>
-            <div id="nav-backdrop" aria-hidden="true"></div>
-        </nav>
-    </header>
+        </main>
 
-    <main id="main-content">
-        <div id="container">
-            <h1 class="page-title">Curriculum Vitae</h1>
-            <div class="center">
-                <a href="pdf/cv.pdf" target="_blank" rel="noopener" class="download-btn">
-                    <i data-lucide="download" class="icon"></i>
-                    Download PDF
-                </a>
-            </div>
-
-            <!-- Highlights Bar -->
-            <section class="cv-highlights" aria-label="Career highlights">
-                <div class="cv-stat">
-                    <i data-lucide="briefcase" class="cv-stat-icon"></i>
-                    <span class="cv-stat-value">15+</span>
-                    <span class="cv-stat-label">Years Experience</span>
-                </div>
-                <div class="cv-stat">
-                    <i data-lucide="graduation-cap" class="cv-stat-icon"></i>
-                    <span class="cv-stat-value">MFA</span>
-                    <span class="cv-stat-label">Interior Design</span>
-                </div>
-                <div class="cv-stat">
-                    <i data-lucide="badge-check" class="cv-stat-icon"></i>
-                    <span class="cv-stat-value">3</span>
-                    <span class="cv-stat-label">Certifications</span>
-                </div>
-                <div class="cv-stat">
-                    <i data-lucide="trophy" class="cv-stat-icon"></i>
-                    <span class="cv-stat-value">ASID</span>
-                    <span class="cv-stat-label">Award Recipient</span>
-                </div>
-            </section>
-
-            <!-- Education Timeline -->
-            <section id="education" class="cv-section">
-                <h2 class="cv-header">
-                    <i data-lucide="graduation-cap" class="cv-header-icon"></i>
-                    Education
-                </h2>
-                <div class="cv-timeline">
-                    <div class="cv-timeline-item">
-                        <div class="cv-timeline-marker">
-                            <span class="cv-timeline-year">2019</span>
-                        </div>
-                        <div class="cv-timeline-content">
-                            <h3>Master of Fine Arts in Interior Design</h3>
-                            <p class="cv-timeline-org">Brenau University, Atlanta, GA</p>
-                            <ul class="cv-list">
-                                <li>Terminal degree with focus on teaching at collegiate level</li>
-                                <li>GPA: 4.0 / Concentration: Human Environment</li>
-                                <li>Graduate student assistantship (2014-2016)</li>
-                                <li>Thesis: Designing Educational Facilities for Social Engagement in Adolescents</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="cv-timeline-item">
-                        <div class="cv-timeline-marker">
-                            <span class="cv-timeline-year">2009</span>
-                        </div>
-                        <div class="cv-timeline-content">
-                            <h3>Bachelor of Arts + Honors in Interior Design</h3>
-                            <p class="cv-timeline-org">Samford University, Birmingham, AL</p>
-                            <ul class="cv-list">
-                                <li>CIDA accredited undergraduate program</li>
-                                <li>GPA: 3.86 / Fulfilled honors program requirements</li>
-                                <li>Interior Design Department Outstanding Senior Award</li>
-                                <li>Student Organization President (2004-2005)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Certifications Cards -->
-            <section id="certifications" class="cv-section">
-                <h2 class="cv-header">
-                    <i data-lucide="award" class="cv-header-icon"></i>
-                    Registrations &amp; Certifications
-                </h2>
-                <div class="cv-certifications">
-                    <div class="credential-card">
-                        <i data-lucide="badge-check" class="credential-icon"></i>
-                        <span class="credential-abbr">RID</span>
-                        <span class="credential-desc">AL State Registered Interior Designer</span>
-                        <span class="credential-year">2012</span>
-                    </div>
-                    <div class="credential-card">
-                        <i data-lucide="award" class="credential-icon"></i>
-                        <span class="credential-abbr">NCIDQ</span>
-                        <span class="credential-desc">Council for Interior Design Qualification</span>
-                        <span class="credential-year">2012</span>
-                    </div>
-                    <div class="credential-card">
-                        <i data-lucide="leaf" class="credential-icon"></i>
-                        <span class="credential-abbr">LEED AP</span>
-                        <span class="credential-desc">Interior Design + Construction</span>
-                        <span class="credential-year">2011</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Professional Experience Timeline -->
-            <section id="experience" class="cv-section">
-                <h2 class="cv-header">
-                    <i data-lucide="briefcase" class="cv-header-icon"></i>
-                    Professional Experience
-                </h2>
-                <div class="cv-timeline">
-                    <div class="cv-timeline-item">
-                        <div class="cv-timeline-marker">
-                            <span class="cv-timeline-year">2020–Present</span>
-                        </div>
-                        <div class="cv-timeline-content">
-                            <h3>Design Educator &amp; Consultant</h3>
-                            <p class="cv-timeline-org">Will &amp; Pierce Agency, Daphne, AL</p>
-                            <ul class="cv-list">
-                                <li>Educate architects and designers on functionality, hygiene, and accessibility requirements for commercial plumbing products</li>
-                                <li>Present continuing education courses to AIA, ASID, and IIDA chapters across Alabama, Mississippi, and Northwest Florida</li>
-                                <li>Provide technical support from specification through final punch for specifiers and manufacturers</li>
-                                <li>Manage large-scale projects including Auburn University, Jackson Airport, Huntsville Airport, and Mobile Airport</li>
-                                <li>Spearheaded company rebranding including new logo, business cards, and website</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="cv-timeline-item">
-                        <div class="cv-timeline-marker">
-                            <span class="cv-timeline-year">2015–2020</span>
-                        </div>
-                        <div class="cv-timeline-content">
-                            <h3>Interior Designer &amp; Project Manager</h3>
-                            <p class="cv-timeline-org">Capstone Real Estate Investments, Birmingham, AL</p>
-                            <ul class="cv-list">
-                                <li>Produced furniture packages of up to $5.5 million for student housing developers and universities</li>
-                                <li>Managed complete FF&E process: selection, specification, bidding, procurement, and installation</li>
-                                <li>Coordinated installations lasting up to thirty days with vendors, universities, and construction teams</li>
-                                <li>Developed AutoCAD renovation drawings and SketchUp building mock-ups</li>
-                                <li>Led pre-installation meetings, conference calls, and punch list enforcement</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="cv-timeline-item">
-                        <div class="cv-timeline-marker">
-                            <span class="cv-timeline-year">2009–2015</span>
-                        </div>
-                        <div class="cv-timeline-content">
-                            <h3>Interior Designer</h3>
-                            <p class="cv-timeline-org">Education Corporation of America, Birmingham, AL</p>
-                            <ul class="cv-list">
-                                <li>Assisted in production of construction drawings for new schools</li>
-                                <li>Researched equipment and requirements for student programs</li>
-                                <li>Selected finishes, materials, interior and exterior signage, and artwork</li>
-                                <li>Specified furniture for educational facilities and coordinated orders and installations</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="cv-timeline-item">
-                        <div class="cv-timeline-marker">
-                            <span class="cv-timeline-year">2008</span>
-                        </div>
-                        <div class="cv-timeline-content">
-                            <h3>Design Intern</h3>
-                            <p class="cv-timeline-org">Gresham Smith and Partners, Birmingham, AL</p>
-                            <ul class="cv-list">
-                                <li>Summer internship assisting professional designers</li>
-                                <li>Observed field conditions at local construction sites</li>
-                                <li>Researched sustainability information for design team</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Teaching Experience -->
-            <section id="teaching" class="cv-section">
-                <h2 class="cv-header">
-                    <i data-lucide="book-open" class="cv-header-icon"></i>
-                    Academic Teaching Experience
-                </h2>
-                <div class="cv-timeline">
-                    <div class="cv-timeline-item">
-                        <div class="cv-timeline-marker">
-                            <span class="cv-timeline-year">2021 &amp; 2023</span>
-                        </div>
-                        <div class="cv-timeline-content">
-                            <h3>Guest Lecturer</h3>
-                            <p class="cv-timeline-org">Auburn University — CADS 5400: Interior Design for Health &amp; Wellness</p>
-                            <ul class="cv-list">
-                                <li>Created presentation content from Sloan and Delta research</li>
-                                <li>Presented material online (2021) and in-person (2023)</li>
-                                <li>Addressed questions concerning plumbing products and designing for public health and safety</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="cv-timeline-item">
-                        <div class="cv-timeline-marker">
-                            <span class="cv-timeline-year">2019–2023</span>
-                        </div>
-                        <div class="cv-timeline-content">
-                            <h3>Guest Reviewer</h3>
-                            <p class="cv-timeline-org">Samford University — IARC 252: Design Fundamentals II</p>
-                            <ul class="cv-list">
-                                <li>Participated in mid-term and final student project reviews (2019, 2020, 2021, 2022, 2023)</li>
-                                <li>Evaluated space planning, design fundamentals, building codes, construction methods, and presentations</li>
-                                <li>Offered constructive criticism regarding student projects</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="cv-timeline-item">
-                        <div class="cv-timeline-marker">
-                            <span class="cv-timeline-year">2015</span>
-                        </div>
-                        <div class="cv-timeline-content">
-                            <h3>Student Teaching</h3>
-                            <p class="cv-timeline-org">Brenau University — ID233: Computer Aided Drafting &amp; Design</p>
-                            <ul class="cv-list">
-                                <li>Created course content, instructed students, and graded assignments</li>
-                                <li>Designed syllabus, weekly Canvas modules, instruction videos, and exams</li>
-                                <li>Focused on AutoCAD techniques for construction documents (CIDA compliant)</li>
-                                <li>Final project: students created their first construction document set</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Professional Instruction -->
-            <section id="instruction" class="cv-section">
-                <h2 class="cv-header">
-                    <i data-lucide="presentation" class="cv-header-icon"></i>
-                    Professional Instruction
-                </h2>
-                <p class="cv-intro">Over sixty CEU presentations delivered to architecture and interior design professionals over the past five years.</p>
-                
-                <h3 class="cv-skills-category">Representative Topics</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Conserving Water through High Efficiency Fixtures</span>
-                    <span class="skill-tag">Specifying Plumbing Fixtures for K12 and Higher Education</span>
-                    <span class="skill-tag">Considerations for Accessible Design in Commercial Restrooms</span>
-                    <span class="skill-tag">Transforming Aging in Place to Aging with Grace</span>
-                    <span class="skill-tag">Sink Selection for Sustainability &amp; Accessibility</span>
-                </div>
-
-                <h3 class="cv-skills-category">Representative Organizations</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">AIA Mississippi</span>
-                    <span class="skill-tag">AIA Mobile</span>
-                    <span class="skill-tag">AIA Montgomery</span>
-                    <span class="skill-tag">AIA North Alabama</span>
-                    <span class="skill-tag">AIA Northwest Florida</span>
-                    <span class="skill-tag">ASID Alabama</span>
-                    <span class="skill-tag">IIDA Alabama</span>
-                </div>
-            </section>
-
-            <!-- Awards -->
-            <section id="awards" class="cv-section">
-                <h2 class="cv-header">
-                    <i data-lucide="trophy" class="cv-header-icon"></i>
-                    Awards
-                </h2>
-                <div class="highlight-box">
-                    <i data-lucide="trophy" class="highlight-icon"></i>
-                    <div class="highlight-content">
-                        <span class="highlight-label">2019 — Joel Polsky Academic Achievement Award</span>
-                        <p>National award from the American Society of Interior Designers, given to one outstanding graduate or undergraduate research project annually. Received for thesis findings on educational facility design.</p>
-                    </div>
-                </div>
-                <div class="highlight-box">
-                    <i data-lucide="award" class="highlight-icon"></i>
-                    <div class="highlight-content">
-                        <span class="highlight-label">2013 — IIDA "Best of Institutional" Award</span>
-                        <p>Team award for Ecotech Institute project at Education Corporation of America. Presented at IIDA Alabama's Biennial IDIE Awards Gala.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Publications & Press -->
-            <section id="press" class="cv-section">
-                <h2 class="cv-header">
-                    <i data-lucide="newspaper" class="cv-header-icon"></i>
-                    Publications &amp; Press
-                </h2>
-                <div class="highlight-box">
-                    <i data-lucide="book-open" class="highlight-icon"></i>
-                    <div class="highlight-content">
-                        <span class="highlight-label">Southern Living Magazine (2024–2025)</span>
-                        <ul class="cv-list">
-                            <li>Interviewed for August 2024 article: <a href="https://www.southernliving.com/home-renovation-priorities-according-to-expert-8693107" target="_blank" rel="noopener">"The 5 Things You Should Prioritize When Renovating a Home on a Budget"</a></li>
-                            <li>Featured in March 2025 issue: <a href="https://www.southernliving.com/mackin-thompson-birmingham-home-tour-8786140" target="_blank" rel="noopener">"Bungalow Revival"</a> — Yeager Residence, Birmingham, AL</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Academic Presentations -->
-            <section id="presentations" class="cv-section">
-                <h2 class="cv-header">
-                    <i data-lucide="presentation" class="cv-header-icon"></i>
-                    Academic Presentations
-                </h2>
-                <div class="cv-presentations">
-                    <div class="cv-presentation-item">
-                        <span class="cv-presentation-venue">Interior Design Educators Council, Auburn, AL</span>
-                        <span class="cv-presentation-title">South Regional Conference — Thesis Findings Presentation</span>
-                    </div>
-                    <div class="cv-presentation-item">
-                        <span class="cv-presentation-venue">Brenau University, Atlanta, GA (2019)</span>
-                        <span class="cv-presentation-title">Expand Your Horizons Research Symposium — Social Engagement in Educational Facility Design</span>
-                    </div>
-                    <div class="cv-presentation-item">
-                        <span class="cv-presentation-venue">Samford University, Birmingham, AL (2009)</span>
-                        <span class="cv-presentation-title">Honors Program Capstone — Sustainable Design and LEED Requirements</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills -->
-            <section id="skills" class="cv-section">
-                <h2 class="cv-header">
-                    <i data-lucide="wrench" class="cv-header-icon"></i>
-                    Skills
-                </h2>
-                <h3 class="cv-skills-category">Design Software</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Revit</span>
-                    <span class="skill-tag">AutoCAD</span>
-                    <span class="skill-tag">SketchUp</span>
-                    <span class="skill-tag">Adobe Photoshop</span>
-                    <span class="skill-tag">Gimp</span>
-                    <span class="skill-tag">Adobe Acrobat Pro</span>
-                    <span class="skill-tag">Canva</span>
-                </div>
-                <h3 class="cv-skills-category">Productivity &amp; Collaboration</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Microsoft Office Suite</span>
-                    <span class="skill-tag">Google Workspace</span>
-                    <span class="skill-tag">Canvas LMS</span>
-                    <span class="skill-tag">Dropbox</span>
-                    <span class="skill-tag">OneDrive</span>
-                    <span class="skill-tag">Prezi</span>
-                    <span class="skill-tag">Constant Contact</span>
-                    <span class="skill-tag">Cognito Forms</span>
-                </div>
-                <h3 class="cv-skills-category">Web Development</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">WordPress</span>
-                    <span class="skill-tag">Weebly</span>
-                    <span class="skill-tag">Wix</span>
-                </div>
-                <h3 class="cv-skills-category">Professional</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Project Management</span>
-                    <span class="skill-tag">FF&E Specification</span>
-                    <span class="skill-tag">Budget Management</span>
-                    <span class="skill-tag">Client Communication</span>
-                    <span class="skill-tag">Team Leadership</span>
-                    <span class="skill-tag">Design Problem-Solving</span>
-                    <span class="skill-tag">Student Mentorship</span>
-                </div>
-            </section>
-
-            <!-- Organizations -->
-            <section id="organizations" class="cv-section">
-                <h2 class="cv-header">
-                    <i data-lucide="users" class="cv-header-icon"></i>
-                    Professional Organizations
-                </h2>
-                <div class="cv-orgs">
-                    <div class="cv-org-item">
-                        <h3>International Interior Design Association (IIDA)</h3>
-                        <p class="cv-org-role">Professional Member, 2013–present</p>
-                        <ul class="cv-list">
-                            <li>Past President, Alabama Chapter (2021–2022)</li>
-                            <li>President (2020–2021)</li>
-                            <li>President Elect (2019–2020)</li>
-                            <li>Vice President of Communications (2013–2015, 2018–2019)</li>
-                            <li>Director of Communications (2012–2013)</li>
-                        </ul>
-                    </div>
-                    <div class="cv-org-item">
-                        <h3>Interior Design Educators Council (IDEC)</h3>
-                        <p class="cv-org-role">Graduate Student Member, 2019</p>
-                    </div>
-                    <div class="cv-org-item">
-                        <h3>Alabama Interior Design Coalition</h3>
-                        <p class="cv-org-role">Professional Member, 2013–present</p>
-                        <ul class="cv-list">
-                            <li>Communications Committee Chair (2022–present)</li>
-                            <li>IIDA Liaison (2020–2021)</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- References -->
-            <section class="cv-section cv-references">
-                <h2 class="cv-header">
-                    <i data-lucide="message-circle" class="cv-header-icon"></i>
-                    References
-                </h2>
-                <p>Available upon request.</p>
-            </section>
-        </div>
-    </main>
-
-
-    <script src="scripts/header.js"></script>
-    <script src="scripts/script.js"></script>
-</body>
+        <script src="scripts/header.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
 </html>
