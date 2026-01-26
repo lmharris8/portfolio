@@ -113,11 +113,6 @@
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--color-primary);
-    transition: gap var(--transition-fast);
-}
-
-.philosophy-snippet .read-more:hover {
-    gap: var(--spacing-sm);
 }
 
 .philosophy-snippet .read-more .icon {
