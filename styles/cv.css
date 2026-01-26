@@ -48,13 +48,17 @@
 }
 
 .cv-list li::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0.6em;
     width: 6px;
     height: 6px;
     background: var(--color-primary);
+}
+
+.cv-list-paragraph {
+    font-size: 0.9375rem;
 }
 
 /* CV Header Icons */
@@ -79,7 +83,7 @@
 }
 
 .cv-timeline::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 6px;
     top: 0;
@@ -104,7 +108,7 @@
 }
 
 .cv-timeline-marker::before {
-    content: '';
+    content: "";
     display: block;
     width: 14px;
     height: 14px;
@@ -115,7 +119,7 @@
     position: absolute;
     left: 24px;
     top: -2px;
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     font-weight: 500;
     color: var(--color-primary);
     text-transform: uppercase;
@@ -130,13 +134,13 @@
 .cv-timeline-content h3 {
     font-size: 1rem;
     font-weight: 500;
-    margin: 0 0 var(--spacing-xs);
+    margin: 0;
 }
 
 .cv-timeline-org {
     font-size: 0.875rem;
     color: var(--color-text-light);
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
 }
 
 /* CV Certifications Grid */
@@ -259,6 +263,11 @@
     font-style: italic;
 }
 
+/* CV Highlight Box Labels - slightly larger than default */
+.cv-section .highlight-label {
+    font-size: 0.8125rem;
+}
+
 /* ================================
    RESPONSIVE - Mobile
    ================================ */
@@ -266,37 +275,37 @@
     .cv-list {
         padding-left: 0;
     }
-    
+
     .cv-timeline {
         padding-left: var(--spacing-lg);
     }
-    
+
     .cv-timeline::before {
         left: 4px;
     }
-    
+
     .cv-timeline-marker {
         left: calc(-1 * var(--spacing-lg));
     }
-    
+
     .cv-timeline-marker::before {
         width: 10px;
         height: 10px;
     }
-    
+
     .cv-timeline-year {
         left: 16px;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
-    
+
     .cv-certifications {
         grid-template-columns: 1fr;
     }
-    
+
     .cv-header {
         font-size: 1.1rem;
     }
-    
+
     .cv-header-icon {
         width: 20px;
         height: 20px;
