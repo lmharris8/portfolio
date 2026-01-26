@@ -1,195 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Laura Harris - Registered Interior Designer with expertise in commercial interiors, student housing, and educational facility design.">
-    <title>Laura Harris | Interior Designer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Laura Harris - Registered Interior Designer with expertise in commercial interiors, student housing, and educational facility design."
+        />
+        <title>Laura Harris | Interior Designer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/components.css" />
+        <link rel="stylesheet" href="styles/home.css" />
 
-    <!-- Favicon Files -->
-    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Laura Harris" />
+        <!-- Favicon Files -->
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Laura Harris" />
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    
-    <header>
-        <nav id="navbar" aria-label="Main navigation">
-            <button type="button" id="menubutton" onclick="toggleNavbar()" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">&#9776;</button>
-            <span class="square" aria-hidden="true"></span>
-            <span id="title">LAURA HARRIS</span>
-            <span class="spacer"></span>
-            <div id="navlinks">
-                <ul>
-                    <li><a href="index.html" class="navLink active-link" aria-current="page">HOME</a></li>
-                    <li><a href="portfolio.html" class="navLink">PORTFOLIO</a></li>
-                    <li><a href="cv.html" class="navLink">CURRICULUM VITAE</a></li>
-                    <li><a href="research.html" class="navLink">RESEARCH</a></li>
-                    <li><a href="contact.html" class="navLink">CONTACT</a></li>
-                </ul>
+        <script src="https://unpkg.com/lucide@latest"></script>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <header>
+            <nav id="navbar" aria-label="Main navigation">
+                <button
+                    type="button"
+                    id="menubutton"
+                    onclick="toggleNavbar()"
+                    aria-expanded="false"
+                    aria-controls="navlinks"
+                    aria-label="Toggle navigation menu"
+                >
+                    &#9776;
+                </button>
+                <span class="square" aria-hidden="true"></span>
+                <span id="title">LAURA HARRIS</span>
+                <span class="spacer"></span>
+                <div id="navlinks">
+                    <ul>
+                        <li><a href="index.html" class="navLink active-link" aria-current="page">HOME</a></li>
+                        <li><a href="portfolio.html" class="navLink">PORTFOLIO</a></li>
+                        <li><a href="cv.html" class="navLink">CURRICULUM VITAE</a></li>
+                        <li><a href="research.html" class="navLink">RESEARCH</a></li>
+                        <li><a href="contact.html" class="navLink">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div id="nav-backdrop" aria-hidden="true"></div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <div id="container">
+                <!-- Hero Section -->
+                <section class="hero-enhanced">
+                    <img src="img/headshot.jpg" alt="Laura Harris, Interior Designer" class="headshot" />
+                    <div class="hero-content">
+                        <h1>Laura Harris</h1>
+                        <p class="tagline">Registered Interior Designer</p>
+                        <p class="tagline-sub">Interior Design Education & Commercial Practice</p>
+                        <a href="portfolio.html" class="btn-primary">
+                            <i data-lucide="layout-grid" class="icon"></i>
+                            View Portfolio
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Credentials Bar -->
+                <section class="credentials-bar" aria-label="Professional credentials">
+                    <div class="credential-card">
+                        <i data-lucide="badge-check" class="credential-icon"></i>
+                        <span class="credential-abbr">RID</span>
+                        <span class="credential-desc">Registered Interior Designer</span>
+                    </div>
+                    <div class="credential-card">
+                        <i data-lucide="award" class="credential-icon"></i>
+                        <span class="credential-abbr">NCIDQ</span>
+                        <span class="credential-desc">Nationally Certified</span>
+                    </div>
+                    <div class="credential-card">
+                        <i data-lucide="leaf" class="credential-icon"></i>
+                        <span class="credential-abbr">LEED AP</span>
+                        <span class="credential-desc">Sustainability Certified</span>
+                    </div>
+                    <div class="credential-card">
+                        <i data-lucide="briefcase" class="credential-icon"></i>
+                        <span class="credential-abbr">15+ Years</span>
+                        <span class="credential-desc">Professional Experience</span>
+                    </div>
+                </section>
+
+                <!-- About Section -->
+                <section class="about-section">
+                    <h2>About</h2>
+                    <article class="bio">
+                        <p>
+                            Laura Harris is a registered interior designer with over fifteen years of commercial
+                            interior design experience. She graduated with a Bachelor of Arts in Interior Design from
+                            Samford University, which offers an undergraduate interior design program accredited by the
+                            Council for Interior Design Accreditation (CIDA). In 2009, she passed the Leadership in
+                            Energy and Environment Design (LEED) exam. She also passed the National Council for Interior
+                            Design Qualification (NCIDQ) examination in 2012 and became a registered interior designer
+                            in the state of Alabama. She is a Past President of the International Interior Design
+                            Association (IIDA) Alabama Chapter, which coordinates professional events for the interior
+                            design community including joint ventures with the American Society of Interior Designers
+                            (ASID) and the Alabama Interior Design Coalition (AIDC).
+                        </p>
+
+                        <div class="highlight-box">
+                            <i data-lucide="trophy" class="highlight-icon"></i>
+                            <div class="highlight-content">
+                                <span class="highlight-label">Award</span>
+                                <p>
+                                    Received her Master of Fine Arts in Interior Design from Brenau University in May
+                                    2019 and was awarded the
+                                    <strong>Joel Polsky Academic Achievement Award</strong> offered by ASID for her
+                                    thesis findings.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box">
+                            <i data-lucide="newspaper" class="highlight-icon"></i>
+                            <div class="highlight-content">
+                                <span class="highlight-label">Featured In</span>
+                                <p>
+                                    Interviewed and featured in
+                                    <a href="cv.html#press"><strong>Southern Living</strong></a> magazine (2024–2025)
+                                    for expertise on home renovation priorities and residential design work.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p>
+                            Laura is currently employed by Will &amp; Pierce Agency where she educates architects and
+                            designers on commercial plumbing products and presents continuing education courses to
+                            professional organizations throughout Alabama, Mississippi, and Northwest Florida. She has
+                            delivered over sixty CEU presentations covering topics such as accessibility,
+                            sustainability, and hygienic design considerations. She hopes to expand her career by
+                            utilizing her graduate degree to instruct the next generation of interior designers.
+                        </p>
+                    </article>
+                </section>
+
+                <!-- Featured Projects -->
+                <section class="featured-section">
+                    <h2>Featured Projects</h2>
+                    <div class="featured-grid">
+                        <a href="ecotech.html" class="featured-card" aria-label="View Ecotech Institute project">
+                            <div class="featured-image" style="background-image: url('img/ecotech/1.webp')"></div>
+                            <div class="featured-label">Ecotech Institute</div>
+                        </a>
+                        <a href="usf.html" class="featured-card" aria-label="View University of South Florida project">
+                            <div class="featured-image" style="background-image: url('img/usf/1.webp')"></div>
+                            <div class="featured-label">USF: The Village</div>
+                        </a>
+                        <a href="yeager.html" class="featured-card" aria-label="View Yeager Residence project">
+                            <div class="featured-image" style="background-image: url('img/yeager/1.webp')"></div>
+                            <div class="featured-label">Yeager Residence</div>
+                        </a>
+                    </div>
+                    <p class="featured-cta">
+                        <a href="portfolio.html" class="btn-secondary">
+                            View Full Portfolio
+                            <i data-lucide="arrow-right" class="icon"></i>
+                        </a>
+                    </p>
+                </section>
+
+                <!-- Expertise Section -->
+                <section class="expertise-section">
+                    <h2>Areas of Expertise</h2>
+                    <div class="expertise-grid">
+                        <div class="expertise-card">
+                            <i data-lucide="presentation" class="expertise-icon"></i>
+                            <h3>Design Education</h3>
+                            <p>
+                                Continuing education presentations and academic instruction for architecture and
+                                interior design professionals.
+                            </p>
+                        </div>
+                        <div class="expertise-card">
+                            <i data-lucide="accessibility" class="expertise-icon"></i>
+                            <h3>Accessible Design</h3>
+                            <p>
+                                ADA compliance and universal design principles for commercial restrooms and public
+                                spaces.
+                            </p>
+                        </div>
+                        <div class="expertise-card">
+                            <i data-lucide="leaf" class="expertise-icon"></i>
+                            <h3>Sustainable Design</h3>
+                            <p>
+                                LEED-certified expertise in water conservation, high-efficiency fixtures, and green
+                                building practices.
+                            </p>
+                        </div>
+                        <div class="expertise-card">
+                            <i data-lucide="building-2" class="expertise-icon"></i>
+                            <h3>Commercial Interiors</h3>
+                            <p>
+                                Educational facilities, student housing, and large-scale commercial projects from
+                                specification to installation.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact CTA -->
+                <section class="cta-section">
+                    <h2>Let's Connect</h2>
+                    <p>Interested in collaborating or learning more about my work?</p>
+                    <a href="contact.html" class="btn-primary">
+                        <i data-lucide="mail" class="icon"></i>
+                        Get in Touch
+                    </a>
+                </section>
             </div>
-            <div id="nav-backdrop" aria-hidden="true"></div>
-        </nav>
-    </header>
+        </main>
 
-    <main id="main-content">
-        <div id="container">
-            <!-- Hero Section -->
-            <section class="hero-enhanced">
-                <img src="img/headshot.jpg" alt="Laura Harris, Interior Designer" class="headshot">
-                <div class="hero-content">
-                    <h1>Laura Harris</h1>
-                    <p class="tagline">Registered Interior Designer</p>
-                    <p class="tagline-sub">Interior Design Education & Commercial Practice</p>
-                    <a href="portfolio.html" class="btn-primary">
-                        <i data-lucide="layout-grid" class="icon"></i>
-                        View Portfolio
-                    </a>
-                </div>
-            </section>
-
-            <!-- Credentials Bar -->
-            <section class="credentials-bar" aria-label="Professional credentials">
-                <div class="credential-card">
-                    <i data-lucide="badge-check" class="credential-icon"></i>
-                    <span class="credential-abbr">RID</span>
-                    <span class="credential-desc">Registered Interior Designer</span>
-                </div>
-                <div class="credential-card">
-                    <i data-lucide="award" class="credential-icon"></i>
-                    <span class="credential-abbr">NCIDQ</span>
-                    <span class="credential-desc">Nationally Certified</span>
-                </div>
-                <div class="credential-card">
-                    <i data-lucide="leaf" class="credential-icon"></i>
-                    <span class="credential-abbr">LEED AP</span>
-                    <span class="credential-desc">Sustainability Certified</span>
-                </div>
-                <div class="credential-card">
-                    <i data-lucide="briefcase" class="credential-icon"></i>
-                    <span class="credential-abbr">15+ Years</span>
-                    <span class="credential-desc">Professional Experience</span>
-                </div>
-            </section>
-
-            <!-- About Section -->
-            <section class="about-section">
-                <h2>About</h2>
-                <article class="bio">
-                    <p>
-                        Laura Harris is a registered interior designer with over fifteen years of commercial interior design
-                        experience. She graduated with a Bachelor of Arts in Interior Design from Samford University,
-                        which offers an undergraduate interior design program accredited by the Council for Interior Design
-                        Accreditation (CIDA). In 2009, she passed the Leadership in Energy and Environment Design (LEED)
-                        exam. She also passed the National Council for Interior Design Qualification (NCIDQ) examination in
-                        2012 and became a registered interior designer in the state of Alabama. She is a Past President of the
-                        International Interior Design Association (IIDA) Alabama Chapter, which coordinates
-                        professional events for the interior design community including joint ventures with the American
-                        Society of Interior Designers (ASID) and the Alabama Interior Design Coalition (AIDC).
-                    </p>
-
-                    <div class="highlight-box">
-                        <i data-lucide="trophy" class="highlight-icon"></i>
-                        <div class="highlight-content">
-                            <span class="highlight-label">Award</span>
-                            <p>Received her Master of Fine Arts in Interior Design from Brenau University in May 2019 and was awarded the <strong>Joel Polsky Academic Achievement Award</strong> offered by ASID for her thesis findings.</p>
-                        </div>
-                    </div>
-
-                    <div class="highlight-box">
-                        <i data-lucide="newspaper" class="highlight-icon"></i>
-                        <div class="highlight-content">
-                            <span class="highlight-label">Featured In</span>
-                            <p>Interviewed and featured in <a href="cv.html#press"><strong>Southern Living</strong></a> magazine (2024–2025) for expertise on home renovation priorities and residential design work.</p>
-                        </div>
-                    </div>
-
-                    <p>
-                        Laura is currently employed by Will &amp; Pierce Agency where she educates architects and designers
-                        on commercial plumbing products and presents continuing education courses to professional organizations
-                        throughout Alabama, Mississippi, and Northwest Florida. She has delivered over sixty CEU presentations
-                        covering topics such as accessibility, sustainability, and hygienic design considerations. She hopes to
-                        expand her career by utilizing her graduate degree to instruct the next generation of interior designers.
-                    </p>
-                </article>
-            </section>
-
-            <!-- Featured Projects -->
-            <section class="featured-section">
-                <h2>Featured Projects</h2>
-                <div class="featured-grid">
-                    <a href="ecotech.html" class="featured-card" aria-label="View Ecotech Institute project">
-                        <div class="featured-image" style="background-image: url('img/ecotech/1.png')"></div>
-                        <div class="featured-label">Ecotech Institute</div>
-                    </a>
-                    <a href="usf.html" class="featured-card" aria-label="View University of South Florida project">
-                        <div class="featured-image" style="background-image: url('img/usf/1.png')"></div>
-                        <div class="featured-label">USF: The Village</div>
-                    </a>
-                    <a href="yeager.html" class="featured-card" aria-label="View Yeager Residence project">
-                        <div class="featured-image" style="background-image: url('img/yeager/1.png')"></div>
-                        <div class="featured-label">Yeager Residence</div>
-                    </a>
-                </div>
-                <p class="featured-cta">
-                    <a href="portfolio.html" class="btn-secondary">
-                        View Full Portfolio
-                        <i data-lucide="arrow-right" class="icon"></i>
-                    </a>
-                </p>
-            </section>
-
-            <!-- Expertise Section -->
-            <section class="expertise-section">
-                <h2>Areas of Expertise</h2>
-                <div class="expertise-grid">
-                    <div class="expertise-card">
-                        <i data-lucide="presentation" class="expertise-icon"></i>
-                        <h3>Design Education</h3>
-                        <p>Continuing education presentations and academic instruction for architecture and interior design professionals.</p>
-                    </div>
-                    <div class="expertise-card">
-                        <i data-lucide="accessibility" class="expertise-icon"></i>
-                        <h3>Accessible Design</h3>
-                        <p>ADA compliance and universal design principles for commercial restrooms and public spaces.</p>
-                    </div>
-                    <div class="expertise-card">
-                        <i data-lucide="leaf" class="expertise-icon"></i>
-                        <h3>Sustainable Design</h3>
-                        <p>LEED-certified expertise in water conservation, high-efficiency fixtures, and green building practices.</p>
-                    </div>
-                    <div class="expertise-card">
-                        <i data-lucide="building-2" class="expertise-icon"></i>
-                        <h3>Commercial Interiors</h3>
-                        <p>Educational facilities, student housing, and large-scale commercial projects from specification to installation.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact CTA -->
-            <section class="cta-section">
-                <h2>Let's Connect</h2>
-                <p>Interested in collaborating or learning more about my work?</p>
-                <a href="contact.html" class="btn-primary">
-                    <i data-lucide="mail" class="icon"></i>
-                    Get in Touch
-                </a>
-            </section>
-        </div>
-    </main>
-
-    <script src="scripts/header.js"></script>
-    <script src="scripts/script.js"></script>
-</body>
+        <script src="scripts/header.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
 </html>
