@@ -86,13 +86,13 @@ function renderMasonryGallery(gallery, folder, total) {
         const linkStyle = hasBorder ? "border: 1px solid rgba(0, 0, 0, 0.15)" : "";
 
         return `
-            <a href="img/${folder}/${num}.png" 
+            <a href="img/${folder}/${num}.webp" 
                class="glightbox ${sizeClass}"
                data-gallery="project-gallery"
                role="listitem"
                aria-label="View image ${num} of ${total}"
                style="${linkStyle}">
-                <img src="img/${folder}/${num}.png" 
+                <img src="img/${folder}/${num}.webp" 
                      class="gallery-img"
                      alt="Project image ${num}"
                      loading="${i < 4 ? "eager" : "lazy"}"
@@ -114,14 +114,14 @@ function renderLegacyThumbnails(gallery, folder, total) {
     const thumbnails = Array.from({ length: total }, (_, i) => {
         const num = i + 1;
         return `
-            <a href="img/${folder}/${num}.png" 
+            <a href="img/${folder}/${num}.webp" 
                class="glightbox thumbnail-link" 
                data-gallery="project-gallery"
                data-description="Image ${num} of ${total}"
                role="listitem"
                aria-label="View image ${num} of ${total}">
                 <div class="${className}" 
-                     style="background-image: url('img/${folder}/${num}.png')"
+                     style="background-image: url('img/${folder}/${num}.webp')"
                      role="img"
                      aria-label="Project image ${num}"></div>
             </a>
