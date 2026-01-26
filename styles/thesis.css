@@ -118,6 +118,80 @@
     padding-bottom: var(--spacing-xl);
 }
 
+/* Studio Application Section */
+.thesis-studio {
+    margin-top: var(--spacing-xl);
+}
+
+.thesis-image-link {
+    display: block;
+    margin-top: var(--spacing-md);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.thesis-image-link:hover {
+    transform: scale(1.01);
+    box-shadow: var(--shadow-lg);
+}
+
+.thesis-image-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-primary);
+}
+
+.thesis-hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.thesis-image-link:hover .thesis-hero-image {
+    transform: scale(1.02);
+}
+
+/* Research Gallery - 2 column grid */
+.research-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin: var(--spacing-xl) 0;
+}
+
+.research-gallery a {
+    display: block;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.research-gallery a:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
+}
+
+.research-gallery a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-primary);
+}
+
+.research-gallery .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.research-gallery a:hover .gallery-img {
+    transform: scale(1.05);
+}
+
 /* ================================
    RESPONSIVE - Mobile
    ================================ */
@@ -140,5 +214,9 @@
     
     .thesis-cta {
         padding: var(--spacing-lg) var(--spacing-md);
+    }
+    
+    .research-gallery {
+        grid-template-columns: 1fr;
     }
 }
