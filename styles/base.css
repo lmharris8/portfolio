@@ -40,6 +40,31 @@
     --radius-lg: 0;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(160, 44, 61, 0.25);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(160, 44, 61, 0.4);
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(160, 44, 61, 0.25) transparent;
+}
+
 /* Reset & Base */
 *, *::before, *::after {
     box-sizing: border-box;
