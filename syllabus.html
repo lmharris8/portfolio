@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Course syllabus and lesson plan overview for AutoCAD instruction." />
+        <title>Laura Harris | Syllabus</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/components.css" />
+        <link rel="stylesheet" href="styles/project.css" />
+
+        <!-- Favicon Files -->
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Laura Harris" />
+
+        <script src="https://unpkg.com/lucide@latest"></script>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <header>
+            <nav id="navbar" aria-label="Main navigation">
+                <button
+                    type="button"
+                    id="menubutton"
+                    onclick="toggleNavbar()"
+                    aria-expanded="false"
+                    aria-controls="navlinks"
+                    aria-label="Toggle navigation menu"
+                >
+                    &#9776;
+                </button>
+                <span class="square" aria-hidden="true"></span>
+                <span id="title">LAURA HARRIS</span>
+                <span class="spacer"></span>
+                <div id="navlinks">
+                    <ul>
+                        <li><a href="index.html" class="navLink">HOME</a></li>
+                        <li><a href="cv.html" class="navLink">CURRICULUM VITAE</a></li>
+                        <li><a href="portfolio.html" class="navLink active-link" aria-current="page">PORTFOLIO</a></li>
+                        <li><a href="research.html" class="navLink">RESEARCH</a></li>
+                        <li><a href="contact.html" class="navLink">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div id="nav-backdrop" aria-hidden="true"></div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <div class="project-split">
+                <aside class="project-info-panel">
+                    <h1 class="project-title">Syllabus &amp; Lesson Plans</h1>
+                    <div class="project-description">
+                        <p>
+                            The course syllabus and lesson plan overview documents outline the structure, objectives,
+                            and weekly schedule for AutoCAD instruction in interior design.
+                        </p>
+                    </div>
+                    <p class="back-link">
+                        <a href="portfolio.html">
+                            <i data-lucide="arrow-left" class="icon"></i>
+                            Back to Portfolio
+                        </a>
+                    </p>
+                </aside>
+                <div class="project-gallery-panel">
+                    <div style="display: flex; flex-direction: column; gap: 1rem; max-width: fit-content">
+                        <a href="pdf/syllabus.pdf" class="btn-primary" target="_blank">
+                            <i data-lucide="file-text" class="icon"></i>
+                            View Syllabus
+                        </a>
+                        <a href="pdf/lesson-plan-overview.pdf" class="btn-primary" target="_blank">
+                            <i data-lucide="file-text" class="icon"></i>
+                            View Lesson Plan Overview
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="scripts/header.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
