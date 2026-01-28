@@ -118,8 +118,8 @@
 .cv-timeline-year {
     position: absolute;
     left: 24px;
-    top: -2px;
-    font-size: 0.8125rem;
+    top: -5px;
+    font-size: 0.9rem;
     font-weight: 500;
     color: var(--color-primary);
     text-transform: uppercase;
