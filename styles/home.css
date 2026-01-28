@@ -68,6 +68,28 @@
     margin-bottom: var(--spacing-md);
 }
 
+/* Hero Social Icons */
+.hero-social {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+}
+
+.hero-social-link {
+    color: var(--color-primary);
+    transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.hero-social-link:hover {
+    color: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+.hero-social-link i {
+    width: 24px;
+    height: 24px;
+}
+
 /* Credentials Bar */
 .credentials-bar {
     display: flex;
@@ -315,6 +337,10 @@
     
     .hero-content .tagline-sub {
         font-size: 0.875rem;
+    }
+    
+    .hero-social {
+        justify-content: center;
     }
     
     .credentials-bar {
